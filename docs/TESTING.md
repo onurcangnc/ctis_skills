@@ -20,9 +20,9 @@ The packages gate rebuilds all three artifacts in a temporary directory and requ
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 18 | `b7ffe96c9a6a2eca7b3d1ed0d1610f7e86e450cd89fd9cfa043ba545078bc389` |
-| `ctis-codex-plugin.zip` | 32 | `bdce9bb261f716f037b6abc849dadd497a7fb234b0f0f434cc3289e9a1d9652a` |
-| `ctis-claude-plugin.zip` | 33 | `fb972a35744f004282a2aae030374419ac113fb20beea88795cb3c29a259d28e` |
+| `ctis.skill` | 19 | `2b037f249e446bfe457decfa4c14728e792f8d90330d7f8ceb5ce7bccc2ee266` |
+| `ctis-codex-plugin.zip` | 34 | `c99ad32ac9bf7cf4e5ab198eeb64d2b1b8b0205b341374cc12b05011b8159ef5` |
+| `ctis-claude-plugin.zip` | 35 | `1025baacc39fa4c6f20ebf49fb4acc8880cc98842a9da2dd91ab44a20708c96b` |
 
 For narrower diagnosis, run:
 
@@ -41,7 +41,7 @@ Last verified on 2026-08-03 at commit `7b30329` (`docs: name frameworks, algorit
 
 - Full suite: 122 tests, 0 failures, 0 errors, 0 skips.
 - `python -B tools/run_acceptance.py`: `ACCEPTANCE_OK`, all five gates pass.
-- Examples: 22 PASS, 1 SKIP (`ctis256-php-syntax`, runtime unavailable: php), 0 FAIL.
+- Examples: 23 PASS, 1 SKIP (`ctis256-php-syntax`, runtime unavailable: php), 0 FAIL.
 - Live slash-command smoke test: all 13 commands (`/ctis:151` … `/ctis:474`) invoked through real `claude -p "/ctis:<course> …"` calls against the installed skill; each loaded its module, produced the required shape, and closed with a `Verified` section. The check that carries the new framework clauses, `/ctis:474`, mapped the finding to `COBIT 2019 DSS05.04` and `ISO/IEC 27001 A.9.2.5`.
 - The installed `route_ctis.py` is gone; each course is served by its own command contract, and the per-course `commands/*.md` files are what resolve `/ctis:<course>`.
 - Package hashes reproduced exactly from the tracked `dist/` (see table above).

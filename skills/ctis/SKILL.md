@@ -21,11 +21,12 @@ Each course is a separate command. Invoke the one that matches the work and stay
 | `/ctis:359` | CTIS359 | function points, COCOMO, quality models, coverage and MC/DC |
 | `/ctis:411` | CTIS411 | project documentation, requirements, WBS, traceability, risk |
 | `/ctis:465` | CTIS465 | .NET microservices with MediatR and EF Core |
+| `/ctis:417` | CTIS417 | software design patterns in Java, the GoF catalogue, UML |
 | `/ctis:474` | CTIS474 | information systems auditing |
 
 Each command loads its module from `references/courses/`. The modules are self-contained: posture, required shape, skeletons, rewrite rules, failure modes, a verification list, and a workflow.
 
-Module files: `references/courses/ctis151.md`, `references/courses/ctis163.md`, `references/courses/ctis164.md`, `references/courses/ctis166.md`, `references/courses/ctis255.md`, `references/courses/ctis256.md`, `references/courses/ctis259.md`, `references/courses/ctis262.md`, `references/courses/ctis264.md`, `references/courses/ctis359.md`, `references/courses/ctis411.md`, `references/courses/ctis465.md`, `references/courses/ctis474.md`.
+Module files: `references/courses/ctis151.md`, `references/courses/ctis163.md`, `references/courses/ctis164.md`, `references/courses/ctis166.md`, `references/courses/ctis255.md`, `references/courses/ctis256.md`, `references/courses/ctis259.md`, `references/courses/ctis262.md`, `references/courses/ctis264.md`, `references/courses/ctis359.md`, `references/courses/ctis411.md`, `references/courses/ctis417.md`, `references/courses/ctis465.md`, `references/courses/ctis474.md`.
 
 ## When invoked without a course
 

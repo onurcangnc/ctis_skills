@@ -234,6 +234,16 @@ def check_ctis411() -> None:
     )
 
 
+def check_ctis417() -> None:
+    source = (ROOT / "ctis417" / "StrategyDuck.java").read_text(encoding="utf-8")
+    assert "interface FlyBehavior" in source and "interface QuackBehavior" in source
+    assert "abstract class Duck" in source
+    assert "protected FlyBehavior flyBehavior" in source        # composition, not inheritance
+    assert "public void setFlyBehavior(" in source              # interchangeable at runtime
+    assert "extends Duck" in source
+    assert "STRATEGY_OK" in source
+
+
 def check_ctis465() -> None:
     source = (ROOT / "ctis465" / "Program.cs").read_text(encoding="utf-8")
     project = (ROOT / "ctis465" / "CatalogSlice.csproj").read_text(encoding="utf-8")
@@ -291,6 +301,7 @@ CHECKS = {
     "CTIS264": check_ctis264,
     "CTIS359": check_ctis359,
     "CTIS411": check_ctis411,
+    "CTIS417": check_ctis417,
     "CTIS465": check_ctis465,
     "CTIS474": check_ctis474,
 }

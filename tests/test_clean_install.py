@@ -449,10 +449,10 @@ class FullAcceptanceTests(unittest.TestCase):
         self.assertEqual(0, payload["examples"]["fail"])
         self.assertIn(
             (payload["examples"]["pass"], payload["examples"]["skip"]),
-            {(22, 1), (23, 0)},
+            {(23, 1), (24, 0)},
         )
         self.assertEqual(
-            {"ctis.skill": 18, "ctis-codex-plugin.zip": 32, "ctis-claude-plugin.zip": 33},
+            {"ctis.skill": 19, "ctis-codex-plugin.zip": 34, "ctis-claude-plugin.zip": 35},
             {name: record["members"] for name, record in payload["packages"].items()},
         )
         self.assertEqual({"critical": 0, "important": 0}, payload["review_findings"])

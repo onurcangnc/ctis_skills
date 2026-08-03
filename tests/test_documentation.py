@@ -21,13 +21,13 @@ COLLABORATE = ROOT / "COLLABORATE.md"
 
 COURSES = (
     "CTIS151", "CTIS163", "CTIS164", "CTIS166", "CTIS255", "CTIS256",
-    "CTIS259", "CTIS262", "CTIS264", "CTIS359", "CTIS411", "CTIS465",
+    "CTIS259", "CTIS262", "CTIS264", "CTIS359", "CTIS411", "CTIS417", "CTIS465",
     "CTIS474",
 )
 PACKAGE_MEMBERS = {
-    "ctis.skill": 18,
-    "ctis-codex-plugin.zip": 32,
-    "ctis-claude-plugin.zip": 33,
+    "ctis.skill": 19,
+    "ctis-codex-plugin.zip": 34,
+    "ctis-claude-plugin.zip": 35,
 }
 EXACT_COMMANDS = (
     "claude plugin marketplace add onurcangnc/ctis_skills",
@@ -100,7 +100,7 @@ class DocumentationTests(unittest.TestCase):
                 rf"(?m)^\| \[{course}\]\({re.escape(module)}\) \| .+ \| \[.+\]\(examples/[^)]+\) \|$",
             )
         course_rows = re.findall(r"(?m)^\| \[CTIS\d{3}\]\(", readme)
-        self.assertEqual(13, len(course_rows))
+        self.assertEqual(14, len(course_rows))
 
     def test_readme_carries_no_instructor_or_specialist_profiles(self) -> None:
         readme = _text(README)
@@ -127,13 +127,13 @@ class DocumentationTests(unittest.TestCase):
     def test_unattributed_examples_render_exact_prompt_argv_expected_and_result_truth(self) -> None:
         readme = _text(README)
         by_id = {record["id"]: record for record in self.examples}
-        self.assertEqual(23, len(by_id))
+        self.assertEqual(24, len(by_id))
         attributed_ids = {
             record["id"] for record in self.examples if record["instructor_refs"]
         }
         self.assertEqual(15, len(attributed_ids))
         unattributed_ids = sorted(set(by_id) - attributed_ids)
-        self.assertEqual(8, len(unattributed_ids))
+        self.assertEqual(9, len(unattributed_ids))
         for example_id in unattributed_ids:
             record = by_id[example_id]
             self.assertEqual(1, readme.count(example_id), example_id)
@@ -141,13 +141,13 @@ class DocumentationTests(unittest.TestCase):
             self.assertIn(" ".join(record["verify"]), readme)
             self.assertIn(json.dumps(record["expected"], ensure_ascii=False), readme)
 
-        self.assertIn("22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL", readme)
-        self.assertNotIn("23 PASS", readme)
+        self.assertIn("23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL", readme)
+        self.assertNotIn("24 PASS", readme)
 
     def test_release_summary_matches_current_packages_and_manifests(self) -> None:
         readme = _text(README)
-        self.assertIn("Codex: 18 canonical skill files", readme)
-        self.assertIn("Claude: 17 semantic files", readme)
+        self.assertIn("Codex: 19 canonical skill files", readme)
+        self.assertIn("Claude: 18 semantic files", readme)
         self.assertIn("only `agents/openai.yaml` is dropped", readme)
         for artifact, expected_members in PACKAGE_MEMBERS.items():
             path = ROOT / "dist" / artifact

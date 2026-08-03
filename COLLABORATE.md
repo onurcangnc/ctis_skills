@@ -1,6 +1,6 @@
 # Collaborate
 
-Thirteen courses have a module. The CTIS curriculum has more, and several of the gaps are courses students ask about most. If you have taken one of the open courses, you can close a gap.
+Fourteen courses have a module. The CTIS curriculum has more, and several of the gaps are courses students ask about most. If you have taken one of the open courses, you can close a gap.
 
 ## What is covered
 
@@ -17,6 +17,7 @@ Thirteen courses have a module. The CTIS curriculum has more, and several of the
 | `/ctis:359` | Principles of Software Engineering | 3 |
 | `/ctis:411` | Senior Project I | 4 |
 | `/ctis:262` | Computer Networks II | elective |
+| `/ctis:417` | Software Design Patterns | elective |
 | `/ctis:465` | Microservice Development | elective |
 | `/ctis:474` | Information Systems Auditing | elective |
 
@@ -36,7 +37,7 @@ Required courses with no module yet, in the order they appear in the curriculum.
 | CTIS 456 | Senior Project II | 4 | the deliverables that differ from Senior Project I |
 | CTIS 496 | Computer and Network Security | 4 | the topic sequence, the exercise format, what an accepted answer proves |
 
-Electives are welcome too. CTIS 417 Software Design Patterns is the one asked about most often: a module would carry the pattern set the course teaches, the shape each pattern is written in, and the distinctions that decide exam answers, such as when a problem calls for Adapter rather than Facade or Decorator.
+Electives are welcome too. CTIS 417 Software Design Patterns was added this way, from lecture material a student had kept.
 
 Internship courses, CTIS 290 and CTIS 310, are not taught in a classroom and are out of scope.
 

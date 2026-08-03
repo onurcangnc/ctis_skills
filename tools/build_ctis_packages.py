@@ -19,7 +19,7 @@ CLAUDE_PLUGIN_OUTPUT = OUTPUT_DIR / "ctis-claude-plugin.zip"
 FIXED_TIME = (2026, 8, 2, 0, 0, 0)
 COURSES = {
     "ctis151", "ctis163", "ctis164", "ctis166", "ctis255", "ctis256",
-    "ctis259", "ctis262", "ctis264", "ctis359", "ctis411", "ctis465", "ctis474",
+    "ctis259", "ctis262", "ctis264", "ctis359", "ctis411", "ctis417", "ctis465", "ctis474",
 }
 CANONICAL_FILES = {
     "SKILL.md",

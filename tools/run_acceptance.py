@@ -36,7 +36,7 @@ PUBLIC_ROOT_DIRECTORIES = (
 )
 _COURSES = {
     "ctis151", "ctis163", "ctis164", "ctis166", "ctis255", "ctis256",
-    "ctis259", "ctis262", "ctis264", "ctis359", "ctis411", "ctis465", "ctis474",
+    "ctis259", "ctis262", "ctis264", "ctis359", "ctis411", "ctis417", "ctis465", "ctis474",
 }
 
 
@@ -669,8 +669,8 @@ def _example_summary(root: Path) -> dict[str, object]:
     failed = [result for result in results if not result.passed and not result.skipped]
     skip_reasons = [{"id": result.id, "reason": result.reason} for result in skipped]
     expected_runtime_shape = (
-        (passed == 22 and len(skipped) == 1 and skipped[0].reason == "runtime unavailable: php")
-        or (passed == 23 and not skipped)
+        (passed == 23 and len(skipped) == 1 and skipped[0].reason == "runtime unavailable: php")
+        or (passed == 24 and not skipped)
     )
     return {
         "pass": passed,
@@ -750,7 +750,7 @@ def _package_gate(root: Path) -> dict[str, object]:
             *payload_parity_errors(canonical, codex, "codex"),
             *payload_parity_errors(semantic, claude, "claude"),
         ]
-        checks.append(_check("platform-payload-parity", "pass" if not parity_errors else "fail", "generic=18 codex=18 claude=17" if not parity_errors else parity_errors[0]))
+        checks.append(_check("platform-payload-parity", "pass" if not parity_errors else "fail", "generic=19 codex=19 claude=18" if not parity_errors else parity_errors[0]))
 
         manifest_pairs = (
             ("ctis-codex-plugin.zip", "ctis/.codex-plugin/plugin.json", ".codex-plugin/plugin.json"),
@@ -775,9 +775,9 @@ def _documentation_gate(root: Path) -> dict[str, object]:
         package_ok = package_ok and f"`{_sha256(path)}`" in readme and f"`{name}` | {members} |" in readme
     examples = _example_summary(root)
     if examples["skip"] == 1:
-        example_text = "22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL"
+        example_text = "23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL"
     else:
-        example_text = "23 PASS / 0 SKIP / 0 FAIL"
+        example_text = "24 PASS / 0 SKIP / 0 FAIL"
     testing = root / "docs" / "TESTING.md"
     testing_ok = testing.is_file()
     if testing_ok:
@@ -861,7 +861,7 @@ def _install_gate(root: Path) -> dict[str, object]:
         checks.extend((
             run_argv([sys.executable, "-B", str(generic_skill / "scripts" / "validate_ctis_skill.py"), "."], cwd=generic_skill, label="bundled-local-generic"),
             run_argv([sys.executable, "-B", str(codex_skill / "scripts" / "validate_ctis_skill.py"), "."], cwd=codex_skill, label="bundled-local-codex"),
-            _check("bundled-local-claude-semantic", "pass", "Claude semantic payload accepted by exact 17-file contract"),
+            _check("bundled-local-claude-semantic", "pass", "Claude semantic payload accepted by exact 18-file contract"),
         ))
 
         home = Path.home()

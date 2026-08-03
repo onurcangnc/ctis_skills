@@ -28,7 +28,7 @@ from check_examples import check_ctis151  # type: ignore[import-not-found]
 
 COURSES = {
     "CTIS151", "CTIS163", "CTIS164", "CTIS166", "CTIS255", "CTIS256",
-    "CTIS259", "CTIS262", "CTIS264", "CTIS359", "CTIS411", "CTIS465",
+    "CTIS259", "CTIS262", "CTIS264", "CTIS359", "CTIS411", "CTIS417", "CTIS465",
     "CTIS474",
 }
 RECORD_FIELDS = {

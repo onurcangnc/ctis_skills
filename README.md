@@ -6,7 +6,7 @@ One CTIS skill with a command per course. Each command loads the module for that
 
 Hand-run examples expect the working directory to be `examples/`; run `cd examples` once.
 
-**Thirteen courses have a module and the curriculum has more.** If you have taken one of the open courses, [**take one on**](COLLABORATE.md). The open list, what a module needs, and the steps are all there.
+**Fourteen courses have a module and the curriculum has more.** If you have taken one of the open courses, [**take one on**](COLLABORATE.md). The open list, what a module needs, and the steps are all there.
 
 ## 📦 1. Install
 
@@ -30,17 +30,17 @@ In a new session, call the course you need: `/ctis:264` for Python algorithms, `
 
 Every course is a separate command. [skills/ctis/SKILL.md](skills/ctis/SKILL.md) lists them and loads the matching module from `references/courses/`. A module is self-contained: the teaching posture, the shape the course requires, copy-ready skeletons, "this becomes that" rewrite rules, named failure modes, a verification list, and a workflow. Code, rationale, and verification stay in one flow. The skill is not designed to imitate any person and makes no claim of personal writing fingerprint.
 
-- Codex: 18 canonical skill files plus the commands; [.codex-plugin/plugin.json](.codex-plugin/plugin.json) defines the skill root.
-- Claude: 17 semantic files; only `agents/openai.yaml` is dropped. [.claude-plugin/plugin.json](.claude-plugin/plugin.json), [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), and [plugin.json](plugin.json) define the client bindings.
+- Codex: 19 canonical skill files plus the commands; [.codex-plugin/plugin.json](.codex-plugin/plugin.json) defines the skill root.
+- Claude: 18 semantic files; only `agents/openai.yaml` is dropped. [.claude-plugin/plugin.json](.claude-plugin/plugin.json), [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), and [plugin.json](plugin.json) define the client bindings.
 - Both clients use the same `ctis@ctis-skills` selector. Packages are generated deterministically from the same canonical source tree.
 
-Last verified example run: `22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`. A SKIP is not counted as a pass.
+Last verified example run: `23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`. A SKIP is not counted as a pass.
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 18 | `b7ffe96c9a6a2eca7b3d1ed0d1610f7e86e450cd89fd9cfa043ba545078bc389` |
-| `ctis-codex-plugin.zip` | 32 | `bdce9bb261f716f037b6abc849dadd497a7fb234b0f0f434cc3289e9a1d9652a` |
-| `ctis-claude-plugin.zip` | 33 | `fb972a35744f004282a2aae030374419ac113fb20beea88795cb3c29a259d28e` |
+| `ctis.skill` | 19 | `2b037f249e446bfe457decfa4c14728e792f8d90330d7f8ceb5ce7bccc2ee266` |
+| `ctis-codex-plugin.zip` | 34 | `c99ad32ac9bf7cf4e5ab198eeb64d2b1b8b0205b341374cc12b05011b8159ef5` |
+| `ctis-claude-plugin.zip` | 35 | `1025baacc39fa4c6f20ebf49fb4acc8880cc98842a9da2dd91ab44a20708c96b` |
 
 ## 🎓 3. Course map
 
@@ -57,14 +57,15 @@ Last verified example run: `22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`
 | [CTIS264](skills/ctis/references/courses/ctis264.md) | Python algorithms and invariant checks | [merge_ranges.py](examples/ctis264/merge_ranges.py) |
 | [CTIS359](skills/ctis/references/courses/ctis359.md) | Decision analysis, assumptions, bounds | [analysis.json](examples/ctis359/analysis.json) |
 | [CTIS411](skills/ctis/references/courses/ctis411.md) | Requirements and bidirectional traceability | [project.json](examples/ctis411/project.json) |
+| [CTIS417](skills/ctis/references/courses/ctis417.md) | Design patterns, participants, principles | [StrategyDuck.java](examples/ctis417/StrategyDuck.java) |
 | [CTIS465](skills/ctis/references/courses/ctis465.md) | .NET vertical slice and verification | [Program.cs](examples/ctis465/Program.cs) |
 | [CTIS474](skills/ctis/references/courses/ctis474.md) | Security audit, findings, closing evidence | [audit.json](examples/ctis474/audit.json) |
 
-CTIS 152, 165, 221, 222, 261, 365, 456, 487 and 496 are required courses with no module yet, and CTIS 417 Software Design Patterns is the elective asked about most. [COLLABORATE.md](COLLABORATE.md) lists what each one needs.
+CTIS 152, 165, 221, 222, 261, 365, 456, 487 and 496 are required courses with no module yet. [COLLABORATE.md](COLLABORATE.md) lists what each one needs.
 
 ## ✅ 4. Additional verification examples
 
-Eight runs not tied to a person check runtime and integrated behavior.
+Nine runs not tied to a person check runtime and integrated behavior.
 
 | Example | Prompt | argv | Expected stdout |
 |---|---|---|---|
@@ -75,6 +76,7 @@ Eight runs not tied to a person check runtime and integrated behavior.
 | `ctis255-javascript-syntax` | Parse-check the interaction layer with the available JavaScript runtime. | `node --check ctis255-256/app.js` | `""` |
 | `ctis256-php-syntax` | Lint the PDO pagination boundary when PHP is available. | `php -l ctis255-256/page.php` | `"No syntax errors detected in ctis255-256/page.php\n"` |
 | `ctis264-executed` | Execute deterministic normal, duplicate, empty, and input-preservation assertions. | `python ctis264/merge_ranges.py` | `"MERGE_OK\n"` |
+| `ctis417-strategy` | Check that the Strategy participants are composed, not inherited, and that the behaviour is interchangeable at runtime. | `python check_examples.py CTIS417` | `"EXAMPLE_OK CTIS417\n"` |
 | `ctis465-framework-runtime` | Restore from an empty package source list and execute the framework-only .NET validation slice. | `python runtime_checks.py dotnet {runtime}` | `"RUNTIME_OK dotnet\n"` |
 
 The examples are original and synthetic. They are not copies of a course question or a student submission. The full record lives in [examples/index.json](examples/index.json) and the runner in [tools/run_example_suite.py](tools/run_example_suite.py).

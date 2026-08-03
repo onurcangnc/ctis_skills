@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "skills" / "ctis"
 COURSES = (
     "ctis151", "ctis163", "ctis164", "ctis166", "ctis255", "ctis256",
-    "ctis259", "ctis262", "ctis264", "ctis359", "ctis411", "ctis465", "ctis474",
+    "ctis259", "ctis262", "ctis264", "ctis359", "ctis411", "ctis417", "ctis465", "ctis474",
 )
 SEMANTIC_FILES = {
     "SKILL.md",

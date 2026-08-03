@@ -84,13 +84,25 @@ Router interfaces are administratively down by default; `no shutdown` is not opt
 
 ### VLANs and trunking
 
+The course reuses one VLAN scheme across the lab sequence, so match it unless the task supplies its own table:
+
+| VLAN | Name |
+|---:|---|
+| 14 | Faculty |
+| 15 | Students |
+| 16 | Guest |
+| 17 | Admin |
+| 99 | Management |
+
+VLAN 99 carries management traffic and is the native VLAN on the trunks, which is why it must match on both ends.
+
 ```text
-S1(config)# vlan 10
-S1(config-vlan)# name Sales
+S1(config)# vlan 14
+S1(config-vlan)# name Faculty
 S1(config-vlan)# exit
-S1(config)# interface range f0/1-8
+S1(config)# interface range f0/1-4
 S1(config-if-range)# switchport mode access
-S1(config-if-range)# switchport access vlan 10
+S1(config-if-range)# switchport access vlan 14
 S1(config-if-range)# exit
 S1(config)# interface g0/1
 S1(config-if)# switchport mode trunk
