@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "id": "erkan-ucar-ctis264",
+      "courses": ["CTIS264"],
+      "prompt": "Implement an inspectable merge sort with duplicate, empty-input, and input-preservation checks.",
+      "artifact_paths": ["check_examples.py", "ctis264/merge_ranges.py"],
+      "verify": ["python", "check_examples.py", "CTIS264"],
+      "expected": "EXAMPLE_OK CTIS264\n",
+      "runtime_required": "python",
+      "instructor_refs": ["erkan-ucar-ctis264"]
+    },
+    {
+      "id": "oumout-chousein-oglou-ctis259",
+      "courses": ["CTIS259"],
+      "prompt": "Verify a relational query against null, duplicate, missing-related-row, aggregation, and boundary fixtures.",
+      "artifact_paths": ["check_examples.py", "ctis259/schema.sql", "ctis259/queries.sql"],
+      "verify": ["python", "check_examples.py", "CTIS259"],
+      "expected": "EXAMPLE_OK CTIS259\n",
+      "runtime_required": "python",
+      "instructor_refs": ["oumout-chousein-oglou-ctis259"]
+    },
+    {
+      "id": "serkan-genc-ctis256",
+      "courses": ["CTIS255", "CTIS256"],
+      "prompt": "Build an accessible jQuery-driven catalog pager with bounded client state and a parameterized, escaped PDO slice.",
+      "artifact_paths": ["check_examples.py", "ctis255-256/index.html", "ctis255-256/app.js", "ctis255-256/page.php"],
+      "verify": ["python", "check_examples.py", "CTIS255-256"],
+      "expected": "EXAMPLE_OK CTIS255-256\n",
+      "runtime_required": "python",
+      "instructor_refs": ["serkan-genc-ctis256"]
+    },
+    {
+      "id": "nese-sahin-ozcelik-ctis151",
+      "courses": ["CTIS151"],
+      "prompt": "Create a bounded C sentinel loop that rejects malformed and out-of-range input without consuming the sentinel.",
+      "artifact_paths": ["check_examples.py", "ctis151/sentinel_stats.c"],
+      "verify": ["python", "check_examples.py", "CTIS151"],
+      "expected": "EXAMPLE_OK CTIS151\n",
+      "runtime_required": "python",
+      "instructor_refs": ["nese-sahin-ozcelik-ctis151"]
+    },
+    {
+      "id": "n-ceren-serim-ctis166",
+      "courses": ["CTIS166"],
+      "prompt": "Normalize, tokenize, sort, and deduplicate a mixed-case fixture under an explicit locale.",
+      "artifact_paths": ["check_examples.py", "ctis166/input.txt", "ctis166/expected.txt", "ctis166/pipeline.sh"],
+      "verify": ["python", "check_examples.py", "CTIS166"],
+      "expected": "EXAMPLE_OK CTIS166\n",
+      "runtime_required": "python",
+      "instructor_refs": ["n-ceren-serim-ctis166"]
+    },
+    {
+      "id": "cuneyt-sevgi-ctis359",
+      "courses": ["CTIS359"],
+      "prompt": "Trace both decision outcomes and a compact estimate through explicit definitions, inputs, assumptions, and limits.",
+      "artifact_paths": ["check_examples.py", "ctis359/analysis.json"],
+      "verify": ["python", "check_examples.py", "CTIS359"],
+      "expected": "EXAMPLE_OK CTIS359\n",
+      "runtime_required": "python",
+      "instructor_refs": ["cuneyt-sevgi-ctis359"]
+    },
+    {
+      "id": "satilmis-topcu-ctis164",
+      "courses": ["CTIS164"],
+      "prompt": "Check the GLUT event skeleton's four STEP structure, buffer swap, timer re-registration, special-key handler, and y-coordinate conversion.",
+      "artifact_paths": ["check_examples.py", "ctis164/Source.cpp"],
+      "verify": ["python", "check_examples.py", "CTIS164"],
+      "expected": "EXAMPLE_OK CTIS164\n",
+      "runtime_required": "python",
+      "instructor_refs": ["satilmis-topcu-ctis164"]
+    },
+    {
+      "id": "hamdi-murat-yildirim-ctis163",
+      "courses": ["CTIS163"],
+      "prompt": "Check a finite function, its matrix representation, and a domain-valid counterexample to a universal claim.",
+      "artifact_paths": ["check_examples.py", "ctis163/relation.json"],
+      "verify": ["python", "check_examples.py", "CTIS163"],
+      "expected": "EXAMPLE_OK CTIS163\n",
+      "runtime_required": "python",
+      "instructor_refs": ["hamdi-murat-yildirim-ctis163"]
+    },
+    {
+      "id": "cagil-alsac-ctis465",
+      "courses": ["CTIS465"],
+      "prompt": "Define a framework-only .NET vertical slice with explicit request/response, validation, cancellation, and secret exclusion.",
+      "artifact_paths": ["check_examples.py", "ctis465/CatalogSlice.csproj", "ctis465/NuGet.Config", "ctis465/Program.cs"],
+      "verify": ["python", "check_examples.py", "CTIS465"],
+      "expected": "EXAMPLE_OK CTIS465\n",
+      "runtime_required": "python",
+      "instructor_refs": ["cagil-alsac-ctis465"]
+    },
+    {
+      "id": "volkan-evrin-ctis474",
+      "courses": ["CTIS474"],
+      "prompt": "Build a synthetic evidence-to-finding record that preserves scope, criteria, evidence limits, ownership, dates, and closure proof.",
+      "artifact_paths": ["check_examples.py", "ctis474/audit.json"],
+      "verify": ["python", "check_examples.py", "CTIS474"],
+      "expected": "EXAMPLE_OK CTIS474\n",
+      "runtime_required": "python",
+      "instructor_refs": ["volkan-evrin-ctis474"]
+    },
+    {
+      "id": "burcu-ozdogru-liman-ctis151",
+      "courses": ["CTIS151"],
+      "prompt": "Inspect initialization, bounds, malformed input, and sentinel termination in a conventional C CLI.",
+      "artifact_paths": ["check_examples.py", "ctis151/sentinel_stats.c"],
+      "verify": ["python", "check_examples.py", "CTIS151"],
+      "expected": "EXAMPLE_OK CTIS151\n",
+      "runtime_required": "python",
+      "instructor_refs": ["burcu-ozdogru-liman-ctis151"]
+    },
+    {
+      "id": "leyla-sezer-ctis151",
+      "courses": ["CTIS151"],
+      "prompt": "Verify the separation of parsing, aggregation, sentinel handling, and formatted output in a small C program.",
+      "artifact_paths": ["check_examples.py", "ctis151/sentinel_stats.c"],
+      "verify": ["python", "check_examples.py", "CTIS151"],
+      "expected": "EXAMPLE_OK CTIS151\n",
+      "runtime_required": "python",
+      "instructor_refs": ["leyla-sezer-ctis151"]
+    },
+    {
+      "id": "engin-zafer-kiracbedel-lab-context",
+      "courses": ["CTIS166"],
+      "prompt": "Verify a compact lab-context pipeline with quoting, deterministic ordering, duplicates, punctuation, and mixed case.",
+      "artifact_paths": ["check_examples.py", "ctis166/input.txt", "ctis166/expected.txt", "ctis166/pipeline.sh"],
+      "verify": ["python", "check_examples.py", "CTIS166"],
+      "expected": "EXAMPLE_OK CTIS166\n",
+      "runtime_required": "python",
+      "instructor_refs": ["engin-zafer-kiracbedel-lab-context"]
+    },
+    {
+      "id": "berk-onder-lab-context",
+      "courses": ["CTIS262"],
+      "prompt": "Verify both trunk endpoints, addressing, VLAN state, routes, connectivity, and failover evidence in a synthetic topology.",
+      "artifact_paths": ["check_examples.py", "ctis262/topology.json"],
+      "verify": ["python", "check_examples.py", "CTIS262"],
+      "expected": "EXAMPLE_OK CTIS262\n",
+      "runtime_required": "python",
+      "instructor_refs": ["berk-onder-lab-context"]
+    },
+    {
+      "id": "hatice-zehra-yilmaz-lab-context",
+      "courses": ["CTIS151"],
+      "prompt": "Check a lab-context C example for initialized state, bounded conversion, sentinel behavior, and visible invalid-input feedback.",
+      "artifact_paths": ["check_examples.py", "ctis151/sentinel_stats.c"],
+      "verify": ["python", "check_examples.py", "CTIS151"],
+      "expected": "EXAMPLE_OK CTIS151\n",
+      "runtime_required": "python",
+      "instructor_refs": ["hatice-zehra-yilmaz-lab-context"]
+    },
+    {
+      "id": "ctis411-traceability",
+      "courses": ["CTIS411"],
+      "prompt": "Check bidirectional requirement, work, verification, risk, and change-control links in a compact project artifact.",
+      "artifact_paths": ["check_examples.py", "ctis411/project.json"],
+      "verify": ["python", "check_examples.py", "CTIS411"],
+      "expected": "EXAMPLE_OK CTIS411\n",
+      "runtime_required": "python",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis151-compiled",
+      "courses": ["CTIS151"],
+      "prompt": "Compile with warnings-as-errors and execute normal, invalid, boundary, sentinel, and post-sentinel cases.",
+      "artifact_paths": ["runtime_checks.py", "ctis151/sentinel_stats.c"],
+      "verify": ["python", "runtime_checks.py", "c", "{runtime}"],
+      "expected": "RUNTIME_OK c\n",
+      "runtime_required": "gcc",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis164-compiled",
+      "courses": ["CTIS164"],
+      "prompt": "Compile and execute line-circle intersection with segment clipping and rejected hits.",
+      "artifact_paths": ["runtime_checks.py", "ctis164/geometry.cpp"],
+      "verify": ["python", "runtime_checks.py", "g++", "{runtime}"],
+      "expected": "RUNTIME_OK g++\n",
+      "runtime_required": "g++",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis166-executed",
+      "courses": ["CTIS166"],
+      "prompt": "Execute the quoted pipeline and compare its deterministic output exactly.",
+      "artifact_paths": ["ctis166/input.txt", "ctis166/expected.txt", "ctis166/pipeline.sh"],
+      "verify": ["bash", "ctis166/pipeline.sh"],
+      "expected": "apple\nbanana\npear\n",
+      "runtime_required": "bash",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis255-javascript-syntax",
+      "courses": ["CTIS255"],
+      "prompt": "Parse-check the interaction layer with the available JavaScript runtime.",
+      "artifact_paths": ["ctis255-256/app.js"],
+      "verify": ["node", "--check", "ctis255-256/app.js"],
+      "expected": "",
+      "runtime_required": "node",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis256-php-syntax",
+      "courses": ["CTIS256"],
+      "prompt": "Lint the PDO pagination boundary when PHP is available.",
+      "artifact_paths": ["ctis255-256/page.php"],
+      "verify": ["php", "-l", "ctis255-256/page.php"],
+      "expected": "No syntax errors detected in ctis255-256/page.php\n",
+      "runtime_required": "php",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis264-executed",
+      "courses": ["CTIS264"],
+      "prompt": "Execute deterministic normal, duplicate, empty, and input-preservation assertions.",
+      "artifact_paths": ["ctis264/merge_ranges.py"],
+      "verify": ["python", "ctis264/merge_ranges.py"],
+      "expected": "MERGE_OK\n",
+      "runtime_required": "python",
+      "instructor_refs": []
+    },
+    {
+      "id": "ctis465-framework-runtime",
+      "courses": ["CTIS465"],
+      "prompt": "Restore from an empty package source list and execute the framework-only .NET validation slice.",
+      "artifact_paths": ["runtime_checks.py", "ctis465/CatalogSlice.csproj", "ctis465/NuGet.Config", "ctis465/Program.cs"],
+      "verify": ["python", "runtime_checks.py", "dotnet", "{runtime}"],
+      "expected": "RUNTIME_OK dotnet\n",
+      "runtime_required": "dotnet",
+      "instructor_refs": []
+    }
+  ]
+}

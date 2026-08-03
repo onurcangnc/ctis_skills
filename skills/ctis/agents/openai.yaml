@@ -1,0 +1,4 @@
+interface:
+  display_name: "CTIS Capability Studio"
+  short_description: "Apply course-specific CTIS coding patterns"
+  default_prompt: "Use $ctis to solve this task with the relevant course capability module and its verification rubric."

@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "path": "docs/assets/1.jpg",
+      "source_page": "https://www.facebook.com/CTISBilkent/",
+      "source_url": "https://www.facebook.com/CTISBilkent/",
+      "retrieved": "2026-08-03",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "d4a0e8bce2d5ed5d5382cf8f94d885db274fba30e622a94b293cf477370269c5",
+      "mime": "image/jpeg",
+      "width": 447,
+      "height": 447
+    },
+    {
+      "path": "docs/assets/instructors/erkan-ucar.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/3315.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "826699f3642ae28e7ca2b214c711fa6ac20e62d639cea785e19ae52a34205136",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/oumout-chousein-oglou.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1125&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/12634.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "f219f285985e41391189283984b4ffb87d126448daa1c28a85eb2efccfb0a017",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/serkan-genc.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=6&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/5934.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "dbc4de55e6a4a852472ca98de389c70c98d31133d66ba1225c1cbfd61207d0cc",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/nese-sahin-ozcelik.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=13&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/5402.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "0f142140ad62e9f3ad348843057926d1379b58fca3c7a9d9cc1fd62424febe2a",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/n-ceren-serim.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=16&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/6812.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "b43e26eeb1c59c6bd48305c58c0c7b99ac6eba5d40e17ff139fb527cde38ea54",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/cuneyt-sevgi.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=11&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/7062.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "ae61ff086df689f1cc139864d07673b45d03e424328413ef56ba2ca14f205b79",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/satilmis-topcu.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=21&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/76.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "d8182c732f1a6df02998d956ea651f9c4f25cb22d4d01daa717d759caa394c82",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/hamdi-murat-yildirim.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=14&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/7070.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "4d6254c169e704f51f6220fe56121daf846eeca62416e7c3810dc31cdf7b161f",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/cagil-alsac.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1133&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/cagilalsac.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "71a734b4b1a16712396192dcb7990068eac32ccab7c526cf567be2e648f1c79d",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/volkan-evrin.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1123&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/volkanevrin.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "2304e861793cb0d9ab4c13d279c05e081166af1e7c84e020500e3ef3acb12505",
+      "mime": "image/jpeg",
+      "width": 836,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/burcu-ozdogru-liman.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=15&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/5598.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "2307489dd5ef13b419af3286d44798fa0e2abb90ba28dabccb1f1e1eae21539a",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/leyla-sezer.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=4&type=0",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/6811.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "ee6838c2192c4adea8c97e8b78139618df4f1e0ed3eeada1f3df14903f1b4353",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/engin-zafer-kiracbedel.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1128&type=4",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/7445.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "a0c6cfb0e8ae9ea6e5bb6e26c8421140d2122daf8408be23908eabeffcfdad11",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/berk-onder.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1127&type=4",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/12756.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "d8eae74b9590b5610e625988dd0d4b43eaf3a6a0e01bb68b7887892eec5c86dd",
+      "mime": "image/jpeg",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "path": "docs/assets/instructors/hatice-zehra-yilmaz.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=8&type=4",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/3368.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "0339b65a85d60c3008dab1003a052bf344dfd18d98c282d45147c4aef9d3bee1",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "path": "docs/assets/instructors/efe-mert-sahinkoc.jpg",
+      "source_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=13740&type=4",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/13740.jpg",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
+      "sha256": "7c2b99612f3066f6bb6b53c050d66d23a362103aa12f906d2d4605257252b75b",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 1200
+    }
+  ]
+}

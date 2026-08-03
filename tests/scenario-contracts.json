@@ -1,0 +1,15 @@
+[
+  {"course":"ctis151","prompt":"Write a C solution using functions and arrays, then trace an edge case.","requires":["functions","arrays","validation","trace","compile"]},
+  {"course":"ctis163","prompt":"Explain whether a relation is one-to-one using symbolic and visual reasoning.","requires":["definition","counterexample","representation","proof","quantifier"]},
+  {"course":"ctis164","prompt":"Build an event-driven GLUT scene with timers and keyboard handlers.","requires":["state","event","handler","glut","skeleton"]},
+  {"course":"ctis166","prompt":"Build a deterministic shell text-processing pipeline.","requires":["pipeline","quote","sort","grep","locale"]},
+  {"course":"ctis255","prompt":"Build a persistent task UI with jQuery interaction and no CSS framework.","requires":["semantic","interaction","jquery","css framework","localStorage"]},
+  {"course":"ctis256","prompt":"Implement PHP/PDO pagination with prepared statements.","requires":["PDO","parameter","prepare","escape","placeholder"]},
+  {"course":"ctis259","prompt":"Construct and explain a filtered SQL query incrementally.","requires":["projection","filter","ordering","query","null"]},
+  {"course":"ctis262","prompt":"Configure and troubleshoot a small Packet Tracer topology.","requires":["topology","configuration","verification","vlan","dhcp"]},
+  {"course":"ctis264","prompt":"Write a Python CSV/OOP solution with tests.","requires":["class","edge case","assert","algorithm","recursion","quickSort","Lomuto"]},
+  {"course":"ctis359","prompt":"Derive white-box tests and a project estimate.","requires":["coverage","estimate","mc/dc","function point","cocomo"]},
+  {"course":"ctis411","prompt":"Turn requirements into a traceable deliverable.","requires":["requirement","traceability","acceptance","review","Scrum","SPMP"]},
+  {"course":"ctis465","prompt":"Add a .NET microservice CRUD feature across layers.","requires":["domain","application","API","persistence"]},
+  {"course":"ctis474","prompt":"Write an evidence-backed security audit finding.","requires":["evidence","risk","finding","remediation","COBIT","ISO/IEC 27001"]}
+]

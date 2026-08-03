@@ -1,0 +1,22 @@
+{
+  "requirements": [
+    {"id": "REQ-001", "text": "The service shall return a health state.", "acceptance": "GET health returns an explicit state.", "owner": "delivery-team"},
+    {"id": "REQ-002", "text": "The health request shall finish within 500 ms in the local test environment.", "acceptance": "Twenty local checks each complete within 500 ms.", "owner": "quality-team"}
+  ],
+  "work": [
+    {"id": "WBS-001", "requirement": "REQ-001", "deliverable": "health endpoint", "milestone": "M1", "owner": "delivery-team"},
+    {"id": "WBS-002", "requirement": "REQ-002", "deliverable": "latency check", "milestone": "M1", "owner": "quality-team"}
+  ],
+  "verifications": [
+    {"id": "CHECK-001", "requirement": "REQ-001", "method": "HTTP contract check", "acceptance": "The response contains an explicit health state."},
+    {"id": "CHECK-002", "requirement": "REQ-002", "method": "Local latency check", "acceptance": "All twenty measurements remain within 500 ms."}
+  ],
+  "traceability": [
+    {"requirement": "REQ-001", "work": "WBS-001", "verification": "CHECK-001"},
+    {"requirement": "REQ-002", "work": "WBS-002", "verification": "CHECK-002"}
+  ],
+  "risks": [
+    {"id": "RISK-001", "probability": "medium", "impact": "medium", "trigger": "latency check exceeds threshold", "mitigation": "profile the endpoint", "contingency": "reduce response scope", "owner": "quality-team", "target_date": "2026-09-01"}
+  ],
+  "changes": ["propose", "impact-review", "approve-or-reject", "implement", "verify", "release", "archive"]
+}

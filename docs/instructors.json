@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "instructors": [
+    {
+      "name": "Erkan Uçar",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS264",
+          "basis": "official-profile",
+          "status": "current"
+        }
+      ],
+      "evidence_class": "official-profile-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1&type=0",
+      "image": "docs/assets/instructors/erkan-ucar.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/3315.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "erkan-ucar-ctis264"
+    },
+    {
+      "name": "Oumout Chousein Oglou",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS259",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS359",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        },
+        {
+          "course": "CTIS411",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1125&type=0",
+      "image": "docs/assets/instructors/oumout-chousein-oglou.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/12634.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "oumout-chousein-oglou-ctis259"
+    },
+    {
+      "name": "Serkan Genç",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS256",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS255",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=6&type=0",
+      "image": "docs/assets/instructors/serkan-genc.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/5934.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "serkan-genc-ctis256"
+    },
+    {
+      "name": "Neşe Şahin Özçelik",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS151",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS255",
+          "basis": "official-profile",
+          "status": "current"
+        }
+      ],
+      "evidence_class": "official-profile-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=13&type=0",
+      "image": "docs/assets/instructors/nese-sahin-ozcelik.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/5402.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "nese-sahin-ozcelik-ctis151"
+    },
+    {
+      "name": "N. Ceren Serim",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS166",
+          "basis": "official-profile",
+          "status": "current"
+        }
+      ],
+      "evidence_class": "official-profile-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=16&type=0",
+      "image": "docs/assets/instructors/n-ceren-serim.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/6812.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "n-ceren-serim-ctis166"
+    },
+    {
+      "name": "Cüneyt Sevgi",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS359",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS262",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=11&type=0",
+      "image": "docs/assets/instructors/cuneyt-sevgi.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/7062.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "cuneyt-sevgi-ctis359"
+    },
+    {
+      "name": "Satılmış Topcu",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS164",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS163",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=21&type=0",
+      "image": "docs/assets/instructors/satilmis-topcu.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/76.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "satilmis-topcu-ctis164"
+    },
+    {
+      "name": "Hamdi Murat Yıldırım",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS163",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS262",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=14&type=0",
+      "image": "docs/assets/instructors/hamdi-murat-yildirim.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/7070.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "hamdi-murat-yildirim-ctis163"
+    },
+    {
+      "name": "Çağıl Alsaç",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS465",
+          "basis": "official-profile",
+          "status": "current"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1133&type=0",
+      "image": "docs/assets/instructors/cagil-alsac.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/cagilalsac.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "cagil-alsac-ctis465"
+    },
+    {
+      "name": "Volkan Evrin",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS474",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "document-supported-historical",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1123&type=0",
+      "image": "docs/assets/instructors/volkan-evrin.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/volkanevrin.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "volkan-evrin-ctis474"
+    },
+    {
+      "name": "Burcu Özdoğru Liman",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS151",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "document-supported-historical",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=15&type=0",
+      "image": "docs/assets/instructors/burcu-ozdogru-liman.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/5598.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "burcu-ozdogru-liman-ctis151"
+    },
+    {
+      "name": "Leyla Sezer",
+      "role": "course-contributor",
+      "courses": [
+        {
+          "course": "CTIS151",
+          "basis": "official-profile",
+          "status": "current"
+        },
+        {
+          "course": "CTIS264",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "mixed-profile-and-document-supported",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=4&type=0",
+      "image": "docs/assets/instructors/leyla-sezer.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/6811.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "leyla-sezer-ctis151"
+    }
+  ],
+  "specialists": [
+    {
+      "name": "Engin Zafer Kıraçbedel",
+      "role": "specialist",
+      "primary": false,
+      "courses": [
+        {
+          "course": "CTIS166",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        },
+        {
+          "course": "CTIS259",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "document-supported-lab-context",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1128&type=4",
+      "image": "docs/assets/instructors/engin-zafer-kiracbedel.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/7445.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "engin-zafer-kiracbedel-lab-context"
+    },
+    {
+      "name": "Berk Önder",
+      "role": "specialist",
+      "primary": false,
+      "courses": [
+        {
+          "course": "CTIS262",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "document-supported-lab-context",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=1127&type=4",
+      "image": "docs/assets/instructors/berk-onder.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/12756.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "berk-onder-lab-context"
+    },
+    {
+      "name": "Hatice Zehra Yılmaz",
+      "role": "specialist",
+      "primary": false,
+      "courses": [
+        {
+          "course": "CTIS151",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        },
+        {
+          "course": "CTIS259",
+          "basis": "signed-course-material",
+          "status": "document-supported/historical"
+        }
+      ],
+      "evidence_class": "document-supported-lab-context",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=8&type=4",
+      "image": "docs/assets/instructors/hatice-zehra-yilmaz.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/3368.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "hatice-zehra-yilmaz-lab-context"
+    },
+    {
+      "name": "Efe Mert Şahinkoç",
+      "role": "specialist",
+      "primary": false,
+      "courses": [],
+      "evidence_class": "department-context-only",
+      "official_page": "https://www.ctis.bilkent.edu.tr/ctis_singleStaff.php?ID=13740&type=4",
+      "image": "docs/assets/instructors/efe-mert-sahinkoc.jpg",
+      "image_source": "https://www.ctis.bilkent.edu.tr/images/ctis_staff/detail/13740.jpg",
+      "retrieved": "2026-08-02",
+      "example_id": "efe-mert-sahinkoc-department-context"
+    }
+  ]
+}

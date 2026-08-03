@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "ctis-skills",
+  "description": "Course-routed CTIS coding and verification skills.",
+  "owner": {"name": "CTIS Skills Contributors"},
+  "plugins": [
+    {
+      "name": "ctis",
+      "description": "Apply anonymous CTIS course patterns to coding, reasoning, and verification.",
+      "source": "./",
+      "category": "education"
+    }
+  ]
+}

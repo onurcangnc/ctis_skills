@@ -1,0 +1,37 @@
+{
+  "engagement": {
+    "scope": "Synthetic catalog service access review",
+    "period": "2026-Q3",
+    "exclusions": ["Production systems", "Personal records"],
+    "criteria": ["POL-AC-1"],
+    "independence_boundary": "This demonstration uses generated evidence only."
+  },
+  "criteria": [
+    {"id": "POL-AC-1", "source": "Synthetic access-control policy", "description": "Privileged grants are reviewed quarterly."}
+  ],
+  "risks": [
+    {"id": "RISK-001", "criterion": "POL-AC-1", "description": "Privileged access may remain unreviewed."}
+  ],
+  "questions": [
+    {"id": "Q-001", "risk_id": "RISK-001", "criterion": "POL-AC-1", "question": "Are privileged grants reviewed each quarter?", "expected_evidence": "dated access-review register"}
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "question": "Q-001",
+      "risk_id": "RISK-001",
+      "observation": "The generated fixture contains a policy but no dated operating record.",
+      "criteria": "POL-AC-1",
+      "evidence": "Synthetic policy summary",
+      "evidence_limitation": "No operating sample is present; effectiveness is not concluded.",
+      "risk": "Privileged access may remain unreviewed.",
+      "severity": "medium",
+      "recommendation": "Complete and retain a quarterly grant review.",
+      "owner": "service-owner",
+      "target_date": "2026-09-30",
+      "follow_up_method": "Inspect the dated register and reperform one sample.",
+      "closure_evidence": "Approved register plus sample result",
+      "status": "open"
+    }
+  ]
+}

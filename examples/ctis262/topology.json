@@ -1,0 +1,22 @@
+{
+  "vlans": [
+    {"id": 10, "name": "CLIENTS", "subnet": "192.0.2.0/28"},
+    {"id": 20, "name": "SERVICES", "subnet": "198.51.100.0/28"}
+  ],
+  "endpoints": [
+    {"name": "client-a", "address": "192.0.2.2/28", "gateway": "192.0.2.1", "vlan": 10},
+    {"name": "client-b", "address": "192.0.2.3/28", "gateway": "192.0.2.1", "vlan": 10},
+    {"name": "service-a", "address": "198.51.100.2/28", "gateway": "198.51.100.1", "vlan": 20}
+  ],
+  "trunks": [
+    {"id": "TRUNK-CORE", "link": "sw-a:gi0/1--sw-b:gi0/1", "ends": ["sw-a:gi0/1", "sw-b:gi0/1"], "allowed_vlans": [10, 20]}
+  ],
+  "routes": [
+    {"id": "ROUTE-DEFAULT", "device": "router-a", "destination": "0.0.0.0/0", "next_hops": ["203.0.113.1", "203.0.113.5"]}
+  ],
+  "evidence": [
+    {"id": "EVID-001", "check": "same-vlan", "source": "client-a", "target": "client-b", "trunk": "TRUNK-CORE", "expected": "reachable"},
+    {"id": "EVID-002", "check": "inter-vlan", "source": "client-a", "target": "service-a", "trunk": "TRUNK-CORE", "expected": "reachable"},
+    {"id": "EVID-003", "check": "primary-link-down", "source": "client-a", "target": "service-a", "trunk": "TRUNK-CORE", "route": "ROUTE-DEFAULT", "expected": "reachable-via-backup"}
+  ]
+}

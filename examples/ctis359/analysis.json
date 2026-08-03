@@ -1,0 +1,44 @@
+{
+  "citations": [
+    {
+      "id": "NIST-BRANCH-COVERAGE",
+      "title": "Decision or branch coverage",
+      "url": "https://csrc.nist.gov/glossary/term/decision_or_branch_coverage",
+      "usage": "Definition source; the glossary identifies NISTIR 7878 as its source."
+    },
+    {
+      "id": "ISO-29119-1-2022",
+      "title": "ISO/IEC/IEEE 29119-1:2022 Software and systems engineering — Software testing — Part 1: General concepts",
+      "url": "https://www.iso.org/standard/81291.html",
+      "usage": "Catalog metadata only; no claim is made about access to the paid standard text."
+    }
+  ],
+  "definitions": {
+    "statement_coverage": {
+      "text": "Executed statements divided by executable statements.",
+      "citation_ids": ["ISO-29119-1-2022"]
+    },
+    "branch_coverage": {
+      "text": "Executed decision outcomes divided by all decision outcomes.",
+      "citation_ids": ["NIST-BRANCH-COVERAGE", "ISO-29119-1-2022"]
+    }
+  },
+  "control_flow": {
+    "nodes": [1, 2, 3, 4, 5],
+    "edges": [[1, 2], [2, 3], [2, 4], [3, 5], [4, 5]],
+    "decision_node": 2
+  },
+  "cases": [
+    {"id": "CASE-1", "input": 0, "path": [1, 2, 3, 5], "outcome": "true"},
+    {"id": "CASE-2", "input": 1, "path": [1, 2, 4, 5], "outcome": "false"}
+  ],
+  "estimate": {
+    "method": "three-point arithmetic mean",
+    "assumptions": ["Values use person-hours.", "All three inputs describe the same bounded task."],
+    "optimistic": 4,
+    "most_likely": 6,
+    "pessimistic": 8,
+    "expected": 6,
+    "limitation": "This compact estimate is not calibrated against historical delivery data."
+  }
+}

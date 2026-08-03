@@ -1,0 +1,27 @@
+{
+  "name": "ctis",
+  "version": "1.0.0",
+  "description": "Course-routed CTIS coding and verification skills.",
+  "author": {
+    "name": "CTIS Skills Contributors",
+    "url": "https://github.com/onurcangnc/ctis_skills"
+  },
+  "homepage": "https://github.com/onurcangnc/ctis_skills",
+  "repository": "https://github.com/onurcangnc/ctis_skills",
+  "license": "MIT",
+  "keywords": ["ctis", "education", "coding", "verification"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CTIS Skills",
+    "shortDescription": "CTIS-guided coding and verification.",
+    "longDescription": "Course-routed CTIS skills for coding, reasoning, and verification.",
+    "developerName": "CTIS Skills Contributors",
+    "category": "Education",
+    "capabilities": ["Instructions"],
+    "websiteURL": "https://github.com/onurcangnc/ctis_skills",
+    "defaultPrompt": [
+      "$ctis Help me solve and verify this CTIS programming task.",
+      "$ctis Route this CTIS request and give me a concrete verification plan."
+    ]
+  }
+}

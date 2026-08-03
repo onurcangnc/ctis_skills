@@ -1,0 +1,8 @@
+# Release packages are rebuilt from the checked-out source bytes and compared
+# byte-for-byte with tracked dist/. Pin LF in every working tree so a clone on
+# Windows (core.autocrlf=true) reproduces identical archives.
+* text=auto eol=lf
+
+*.png binary
+*.zip binary
+*.skill binary

@@ -1,0 +1,10 @@
+{
+  "domain": [0, 1, 2],
+  "codomain": ["north", "south"],
+  "pairs": [[0, "north"], [1, "south"], [2, "north"]],
+  "universal_claim": "Every domain value maps to south.",
+  "counterexample": [0, "north"],
+  "matrix_rows": [0, 1, 2],
+  "matrix_columns": ["north", "south"],
+  "matrix": [[1, 0], [0, 1], [1, 0]]
+}
