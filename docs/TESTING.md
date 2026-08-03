@@ -37,11 +37,13 @@ The first command covers archive mutations, bounded validators, transactional re
 
 ## Verified release
 
-Last verified on 2026-08-03 at commit `7b30329` (`docs: name frameworks, algorithms, and process model in modules`).
+Version `1.1.0`, verified on 2026-08-04 at commit `2df9605` (`Stop requiring both client CLIs to be installed on every machine`).
 
-- Full suite: 122 tests, 0 failures, 0 errors, 0 skips.
+- Full suite: 124 tests, 0 failures, 0 errors, 0 skips.
 - `python -B tools/run_acceptance.py`: `ACCEPTANCE_OK`, all five gates pass.
-- Examples: 23 PASS, 1 SKIP (`ctis256-php-syntax`, runtime unavailable: php), 0 FAIL.
-- Live slash-command smoke test: all 13 commands (`/ctis:151` … `/ctis:474`) invoked through real `claude -p "/ctis:<course> …"` calls against the installed skill; each loaded its module, produced the required shape, and closed with a `Verified` section. The check that carries the new framework clauses, `/ctis:474`, mapped the finding to `COBIT 2019 DSS05.04` and `ISO/IEC 27001 A.9.2.5`.
+- Examples: 23 PASS, 1 SKIP (`ctis256-php-syntax`, runtime unavailable: php), 0 FAIL on this Windows machine. The hosted run has PHP and reports 24 PASS, 0 SKIP, 0 FAIL.
+- GitHub Actions: the tracked-tree audit, the acceptance gates and the full suite pass on `ubuntu-latest`, and the run leaves the checkout unchanged.
+- Live slash-command smoke test: all 14 commands (`/ctis:151` … `/ctis:474`) invoked through real `claude -p "/ctis:<course> …"` calls against the installed skill; each loaded its module, produced the required shape, and closed with a `Verified` section. The check that carries the new framework clauses, `/ctis:474`, mapped the finding to `COBIT 2019 DSS05.04` and `ISO/IEC 27001 A.9.2.5`.
+- Both clients report `1.1.0` after an update, and the installed trees carry 14 commands, 14 course modules and the English-output rule in all of them.
 - The installed `route_ctis.py` is gone; each course is served by its own command contract, and the per-course `commands/*.md` files are what resolve `/ctis:<course>`.
 - Package hashes reproduced exactly from the tracked `dist/` (see table above).
