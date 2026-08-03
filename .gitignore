@@ -33,3 +33,24 @@
 
 /.worktrees/
 /.superpowers/sdd/
+
+# Safety net. The public tree audit already rejects these, but this second
+# barrier holds even when a change is committed without running the audit.
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.pdf
+*.7z
+*.rar
+*.tar
+*.gz
+/*.zip
+/skill-src/
+/private/
+/output/
+/tmp/
+/.venv*/
+/docs/superpowers/
