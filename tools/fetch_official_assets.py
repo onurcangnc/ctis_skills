@@ -72,33 +72,6 @@ def is_official_bilkent_url(value: str) -> bool:
     )
 
 
-def is_official_source_url(value: str) -> bool:
-    """Return whether value is an allowed provenance URL.
-
-    Allows Bilkent HTTPS plus the official CTIS Facebook page. This governs
-    manifest provenance only; the download boundary stays Bilkent-only.
-    """
-    try:
-        parsed = urlparse(value)
-        hostname = parsed.hostname.casefold() if parsed.hostname else ""
-    except (AttributeError, TypeError, ValueError):
-        return False
-    if is_official_bilkent_url(value):
-        return True
-    return (
-        hostname == "www.facebook.com"
-        and parsed.path.casefold() == "/ctisbilkent/"
-        and parsed.scheme.casefold() == "https"
-        and parsed.username is None
-        and parsed.password is None
-    )
-
-
-class _OfficialRedirectHandler(HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, newurl):  # type: ignore[no-untyped-def]
-        if not is_official_bilkent_url(newurl):
-            raise AssetValidationError(f"redirect leaves the Bilkent HTTPS boundary: {newurl}")
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
 def inspect_image(payload: bytes, declared_mime: str) -> tuple[str, int, int]:
@@ -349,7 +322,7 @@ def _preflight_manifest(
 
         for field in ("source_page", "source_url"):
             value = raw_entry.get(field)
-            if not isinstance(value, str) or not is_official_source_url(value):
+            if not isinstance(value, str) or not is_official_bilkent_url(value):
                 errors.append(f"{label}: {field} must be an official Bilkent HTTPS or CTIS page")
         retrieved = raw_entry.get("retrieved")
         if not isinstance(retrieved, str) or not DATE_RE.fullmatch(retrieved):

@@ -35,9 +35,9 @@ If nothing matches, read [shared capability primitives](references/capability-pr
 
 ## Output contract
 
-1. **Interpret** — restate the task, its inputs, its constraints and the artifact expected.
-2. **Produce** — write the working code or artifact in the module's required shape, not a summary of it.
-3. **Verify** — work through the module's verification list and report what you could not check.
+1. **Interpret**. Restate the task, its inputs, its constraints and the artifact expected.
+2. **Produce**. Write the working code or artifact in the module's required shape, not a summary of it.
+3. **Verify**. Work through the module's verification list and report what you could not check.
 
 The course convention governs style. An explicit user or project requirement governs over the course convention; say so when you depart.
 

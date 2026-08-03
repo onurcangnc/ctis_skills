@@ -129,7 +129,7 @@ Order findings by risk, not by the order they were discovered.
 "The company does not patch properly" becomes a condition line stating what was observed and a criteria line naming the standard clause.
 
 **Framework named without its clause.**
-"Violates COBIT" becomes "fails to meet COBIT 2019 DSS05.04, the access rights objective" — the framework name is never enough, the clause or objective must be named. Mapping a finding to a broad framework name without the applicable clause is a failure mode, not a finding.
+"Violates COBIT" becomes "fails to meet COBIT 2019 DSS05.04, the access rights objective". The framework name is never enough, the clause or objective must be named. Mapping a finding to a broad framework name without the applicable clause is a failure mode, not a finding.
 
 **Effect written as a restatement.**
 "The effect is that servers are unpatched" becomes the business consequence: exposure window, affected systems, regulatory or financial impact.

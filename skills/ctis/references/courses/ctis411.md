@@ -12,7 +12,7 @@ Roles are real. Each team member owns named sections and is accountable for them
 
 Software project management plans (SPMP), initial plans, requirement specification (SRS), functional and non-functional requirements, work breakdown structures, milestones and deliverables, stakeholder analysis, communication plans, change control, risk registers, traceability, and the branch-and-merge workflow used to produce the documents.
 
-The process model is part of the scope and it is named: the course uses the Scrum software development process model, and the plan justifies it for the project at hand. The deliverables that carry the grade are the SPMP and the Initial Plan; the SRS is the requirements artifact the plan traces to. Scrum artifacts — backlogs, issues, milestones — are managed on the version control platform, so the plan, the issues and the documents resolve to the same project.
+The process model is part of the scope and it is named: the course uses the Scrum software development process model, and the plan justifies it for the project at hand. The deliverables that carry the grade are the SPMP and the Initial Plan; the SRS is the requirements artifact the plan traces to. Scrum artifacts (backlogs, issues, milestones) are managed on the version control platform, so the plan, the issues and the documents resolve to the same project.
 
 ## The required document skeleton
 

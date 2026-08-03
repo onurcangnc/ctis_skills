@@ -6,7 +6,7 @@ Each record's download date, MIME type, size, and SHA-256 digest live in [docs/a
 
 ## Emblem
 
-- `docs/assets/1.jpg`: [CTIS Facebook page](https://www.facebook.com/CTISBilkent/)
+- `docs/assets/bilkent-ctis-logo.png`: [official page](https://www.ctis.bilkent.edu.tr/), [official file](https://www.ctis.bilkent.edu.tr/images/FAS-CTIS-emblem-ENG.png)
 
 ## Portraits
 

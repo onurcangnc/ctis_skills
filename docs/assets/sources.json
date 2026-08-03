@@ -2,15 +2,15 @@
   "schema_version": 1,
   "assets": [
     {
-      "path": "docs/assets/1.jpg",
-      "source_page": "https://www.facebook.com/CTISBilkent/",
-      "source_url": "https://www.facebook.com/CTISBilkent/",
-      "retrieved": "2026-08-03",
-      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University or the applicable rightsholder. No license or endorsement is implied.",
-      "sha256": "d4a0e8bce2d5ed5d5382cf8f94d885db274fba30e622a94b293cf477370269c5",
-      "mime": "image/jpeg",
-      "width": 447,
-      "height": 447
+      "path": "docs/assets/bilkent-ctis-logo.png",
+      "source_page": "https://www.ctis.bilkent.edu.tr/",
+      "source_url": "https://www.ctis.bilkent.edu.tr/images/FAS-CTIS-emblem-ENG.png",
+      "retrieved": "2026-08-02",
+      "rights_note": "Used for identification and source documentation. Copyright remains with Bilkent University. No license or endorsement is implied.",
+      "sha256": "343b8a299bbf2b18ac6d83b18fc6c3692a9b596595986afcf09dee2f33ec9cc1",
+      "mime": "image/png",
+      "width": 2928,
+      "height": 603
     },
     {
       "path": "docs/assets/instructors/erkan-ucar.jpg",

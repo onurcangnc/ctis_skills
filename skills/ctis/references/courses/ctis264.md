@@ -332,7 +332,7 @@ Every plot ends with an x label, a y label, and a title. An unlabelled plot is i
 A recursive function with no base case, or whose recursive call does not shrink the input, becomes one whose first statement handles the smallest case and whose call passes a strictly smaller argument.
 
 **Mutable default accumulator.**
-`def inorderTrav(self, out=[])` becomes `def inorderTrav(self, out)` with the caller passing `[]`. The default list is created once and leaks values between calls. The same defect appears verbatim in the lab guide for Lab 7 Q1 as `def dfs_recursive(graph, vertex, path=[])`: run twice, the second call starts from the first call's leftover path instead of an empty one — `['a', 'b']`, then `['a', 'b', 'a']`, then `['a', 'b', 'a', 'a']` on consecutive runs. The default is created once at definition time, not per call. Fix by removing the default and passing a fresh `[]` at each call site, and inside the body use `path.append(vertex)` — the guide's `path += vertex` string trick only works for single-character vertex names, and breaks on multi-character ones.
+`def inorderTrav(self, out=[])` becomes `def inorderTrav(self, out)` with the caller passing `[]`. The default list is created once and leaks values between calls. The same defect appears verbatim in the lab guide for Lab 7 Q1 as `def dfs_recursive(graph, vertex, path=[])`: run twice, the second call starts from the first call's leftover path instead of an empty one: `['a', 'b']`, then `['a', 'b', 'a']`, then `['a', 'b', 'a', 'a']` on consecutive runs. The default is created once at definition time, not per call. Fix by removing the default and passing a fresh `[]` at each call site, and inside the body use `path.append(vertex)`. The guide's `path += vertex` string trick only works for single-character vertex names, and breaks on multi-character ones.
 
 **Timing the wrong region.**
 `start` before data generation becomes `start` immediately before the algorithm call.
@@ -351,7 +351,7 @@ A recursive function with no base case, or whose recursive call does not shrink 
 - Computing metrics before cleaning missing values, or merging on a key that exists under two different names.
 - Comparing floats with `==` instead of a tolerance.
 - Capturing the expected result after an in-place algorithm has already run, so the assertion is vacuous.
-- Calling `quickSort(A)` with one argument when the lab guide requires three — `quickSort(A, l, r)` — so the call fails before any sorting happens.
+- Calling `quickSort(A)` with one argument when the lab guide requires three, `quickSort(A, l, r)`, so the call fails before any sorting happens.
 - Assigning the result of `MergeSort(A)`: it returns nothing and sorts in place, so `A = MergeSort(A)` leaves `A` holding `None`.
 - Returning `None` from a function whose Output line promises an array, because the `return` sits inside the loop.
 - Reading a file inside the algorithm function, which makes the algorithm untestable without that file.

@@ -1,12 +1,12 @@
 # CTIS Skills
 
-<a href="https://www.facebook.com/CTISBilkent/"><img src="docs/assets/1.jpg" alt="CTIS" width="640"></a>
+<a href="https://www.ctis.bilkent.edu.tr/"><img src="docs/assets/bilkent-ctis-logo.png" alt="Bilkent CTIS" width="640"></a>
 
-One CTIS skill routes course modules on demand and carries the same semantic behavior in Codex and Claude Code. The distributed skill text is anonymous: person names never enter the skill's instructions.
+One CTIS skill with a command per course. Each command loads the module for that course and carries the same semantic behavior in Codex and Claude Code. The distributed skill text is anonymous: person names never enter the skill's instructions.
 
 Hand-run examples expect the working directory to be `examples/`; run `cd examples` once.
 
-## 1. Install
+## 📦 1. Install
 
 Claude Code:
 
@@ -15,8 +15,6 @@ claude plugin marketplace add onurcangnc/ctis_skills
 claude plugin install ctis@ctis-skills
 ```
 
-Type `/ctis` in a new Claude Code session.
-
 Codex:
 
 ```text
@@ -24,13 +22,13 @@ codex plugin marketplace add onurcangnc/ctis_skills --ref main
 codex plugin add ctis@ctis-skills
 ```
 
-Type `$ctis` in a new Codex session. Update, uninstall, and local-package steps live in [INSTALL.md](INSTALL.md).
+In a new session, call the course you need: `/ctis:264` for Python algorithms, `/ctis:474` for an audit finding, and so on. The skill itself answers to `/ctis` in Claude Code and `$ctis` in Codex when you want it to pick the module for you. Update, uninstall, and local-package steps live in [INSTALL.md](INSTALL.md).
 
-## 2. What the skill does
+## ⚙️ 2. What the skill does
 
-One entry point, [skills/ctis/SKILL.md](skills/ctis/SKILL.md), recognizes a course code or job type and loads the matching module. Modules establish the acceptance contract before producing a solution; code, rationale, and verification stay in one flow. The skill is not designed to imitate any person and makes no claim of personal writing fingerprint.
+Every course is a separate command. [skills/ctis/SKILL.md](skills/ctis/SKILL.md) lists them and loads the matching module from `references/courses/`. A module is self-contained: the teaching posture, the shape the course requires, copy-ready skeletons, "this becomes that" rewrite rules, named failure modes, a verification list, and a workflow. Code, rationale, and verification stay in one flow. The skill is not designed to imitate any person and makes no claim of personal writing fingerprint.
 
-- Codex: 18 canonical skill files; [.codex-plugin/plugin.json](.codex-plugin/plugin.json) defines the skill root.
+- Codex: 18 canonical skill files plus the commands; [.codex-plugin/plugin.json](.codex-plugin/plugin.json) defines the skill root.
 - Claude: 17 semantic files; only `agents/openai.yaml` is dropped. [.claude-plugin/plugin.json](.claude-plugin/plugin.json), [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), and [plugin.json](plugin.json) define the client bindings.
 - Both clients use the same `ctis@ctis-skills` selector. Packages are generated deterministically from the same canonical source tree.
 
@@ -38,11 +36,11 @@ Last verified example run: `22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 18 | `476b4b89a40b710ab693b006e2c4c91c2377cb0e45b928f827b4628c7cbb9e51` |
-| `ctis-codex-plugin.zip` | 32 | `535872a111cf87b3be144d4ebb110edef275211bd1f22c899aaaf74db8c320e4` |
-| `ctis-claude-plugin.zip` | 33 | `e4c742d34b10c8424781479381e914343050098d596a8bdfbb2073747694a29d` |
+| `ctis.skill` | 18 | `0095b85bad0adbd0d8eb4b9ec69f6a47af5f2f0fd7b83182ce3238b122f529cb` |
+| `ctis-codex-plugin.zip` | 32 | `37bcda71a7f9ceabd8c7fc824ddf05973ee7ff7c009cc0c80f52913c955f4959` |
+| `ctis-claude-plugin.zip` | 33 | `e7e8e82d86492d19255814d10fcb63f66df19e89344f56b2d3ef93371784c7f0` |
 
-## 3. Course map
+## 🎓 3. Course map
 
 | Course | Routed work | Example artifact |
 |---|---|---|
@@ -60,7 +58,7 @@ Last verified example run: `22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`
 | [CTIS465](skills/ctis/references/courses/ctis465.md) | .NET vertical slice and verification | [Program.cs](examples/ctis465/Program.cs) |
 | [CTIS474](skills/ctis/references/courses/ctis474.md) | Security audit, findings, closing evidence | [audit.json](examples/ctis474/audit.json) |
 
-## 4. Additional verification examples
+## ✅ 4. Additional verification examples
 
 Eight runs not tied to a person check runtime and integrated behavior.
 
@@ -77,6 +75,16 @@ Eight runs not tied to a person check runtime and integrated behavior.
 
 The examples are original and synthetic. They are not copies of a course question or a student submission. The full record lives in [examples/index.json](examples/index.json) and the runner in [tools/run_example_suite.py](tools/run_example_suite.py).
 
-## Usage boundaries
+## 🧪 5. Verify it yourself
+
+```text
+python -B tools/run_acceptance.py
+python -B -m unittest discover -s tests
+python -B tools/audit_public_tree.py --tracked
+```
+
+The acceptance run ends with `ACCEPTANCE_OK` and covers five gates: source, behavior, packages, docs, and install. It rewrites nothing in the checkout it validates. The reproduction guide is in [docs/TESTING.md](docs/TESTING.md).
+
+## ⚠️ Usage boundaries
 
 This is an independent, unofficial educational and software-assistance work. It does not mean that Bilkent University, CTIS, or any named person has approved or endorsed it. It has no access to private emotions, thoughts, communications, or records; output is not evidence for decisions about a person. For the detailed scope, non-harm intention, academic integrity responsibilities, and correction channel, read the [disclosure notice](DISCLOSURE.md), the [contributing guide](CONTRIBUTING.md), and the [third-party notices](NOTICE.md). To report a source fix or scope issue, use the repository issues channel. Your contributions are welcome; start with the contributing guide.

@@ -20,7 +20,6 @@ from fetch_official_assets import (  # type: ignore[import-not-found]
     fetch_declared_assets,
     inspect_image,
     is_official_bilkent_url,
-    is_official_source_url,
     validate_local_assets,
 )
 
@@ -219,14 +218,14 @@ class InstructorSourceManifestTests(unittest.TestCase):
     def test_every_image_is_declared_once_and_assets_are_exact(self) -> None:
         people = [*self.instructors, *self.specialists]
         declared = [asset["path"] for asset in self.assets]
-        expected = {person["image"] for person in people} | {"docs/assets/1.jpg"}
+        expected = {person["image"] for person in people} | {"docs/assets/bilkent-ctis-logo.png"}
         self.assertEqual(len(declared), len(set(declared)))
         self.assertEqual(expected, set(declared))
         self.assertEqual(17, len(declared))
         for asset in self.assets:
             self.assertEqual(ASSET_FIELDS, set(asset))
-            self.assertTrue(is_official_source_url(asset["source_page"]))
-            self.assertTrue(is_official_source_url(asset["source_url"]))
+            self.assertTrue(is_official_bilkent_url(asset["source_page"]))
+            self.assertTrue(is_official_bilkent_url(asset["source_url"]))
             self.assertTrue(asset["retrieved"].startswith("2026-"))
             self.assertIn("copyright remains", asset["rights_note"].lower())
             self.assertIn("no license or endorsement", asset["rights_note"].lower())

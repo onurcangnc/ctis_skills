@@ -213,7 +213,7 @@ def _declared_asset_paths(
         declared.add(normalized)
         for field in ("source_page", "source_url"):
             value = entry.get(field)
-            if isinstance(value, str) and value.strip() and not _is_official_source_url(value):
+            if isinstance(value, str) and value.strip() and not _is_official_bilkent_url(value):
                 errors.append(
                     f"{label}: {field} must be an official HTTPS bilkent.edu.tr or CTIS page URL"
                 )
@@ -287,18 +287,6 @@ def _is_official_bilkent_url(value: str) -> bool:
     )
 
 
-def _is_official_source_url(value: str) -> bool:
-    parsed = urlparse(value)
-    hostname = parsed.hostname.lower() if parsed.hostname else ""
-    if _is_official_bilkent_url(value):
-        return True
-    return (
-        hostname == "www.facebook.com"
-        and parsed.path.casefold() == "/ctisbilkent/"
-        and parsed.scheme == "https"
-        and parsed.username is None
-        and parsed.password is None
-    )
 
 
 def _tracked_files(root: Path) -> list[str]:

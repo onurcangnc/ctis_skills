@@ -62,8 +62,9 @@ class DocumentationTests(unittest.TestCase):
         readme = _text(README)
         self.assertRegex(
             readme,
-            r'^# CTIS Skills\s+<a [^>]+><img src="docs/assets/1\.jpg"[^>]*></a>\s+'
-            r'One CTIS skill routes course modules',
+            r'^# CTIS Skills\s+<a href="https://www\.ctis\.bilkent\.edu\.tr/">'
+            r'<img src="docs/assets/bilkent-ctis-logo\.png"[^>]*></a>\s+'
+            r'One CTIS skill with a command per course',
         )
         self.assertIn("same semantic behavior in Codex and Claude Code", readme)
         self.assertIn("run `cd examples` once", readme)
