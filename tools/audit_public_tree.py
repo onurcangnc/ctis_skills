@@ -21,6 +21,7 @@ APPROVED_ROOTS = {
 }
 APPROVED_ROOT_FILES = {
     ".gitattributes",
+    "COLLABORATE.md",
     ".gitignore",
     "CONTRIBUTING.md",
     "DISCLOSURE.md",

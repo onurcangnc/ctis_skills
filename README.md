@@ -6,6 +6,8 @@ One CTIS skill with a command per course. Each command loads the module for that
 
 Hand-run examples expect the working directory to be `examples/`; run `cd examples` once.
 
+**Thirteen courses have a module and the curriculum has more.** If you have taken one of the open courses, [**take one on**](COLLABORATE.md). The open list, what a module needs, and the steps are all there.
+
 ## 📦 1. Install
 
 Claude Code:
@@ -57,6 +59,8 @@ Last verified example run: `22 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`
 | [CTIS411](skills/ctis/references/courses/ctis411.md) | Requirements and bidirectional traceability | [project.json](examples/ctis411/project.json) |
 | [CTIS465](skills/ctis/references/courses/ctis465.md) | .NET vertical slice and verification | [Program.cs](examples/ctis465/Program.cs) |
 | [CTIS474](skills/ctis/references/courses/ctis474.md) | Security audit, findings, closing evidence | [audit.json](examples/ctis474/audit.json) |
+
+CTIS 152, 165, 221, 222, 261, 365, 456, 487 and 496 are required courses with no module yet, and CTIS 417 Software Design Patterns is the elective asked about most. [COLLABORATE.md](COLLABORATE.md) lists what each one needs.
 
 ## ✅ 4. Additional verification examples
 

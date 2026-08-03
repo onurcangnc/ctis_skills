@@ -17,6 +17,7 @@ NOTICE = ROOT / "NOTICE.md"
 LICENSE = ROOT / "LICENSE"
 CONTRIBUTING = ROOT / "CONTRIBUTING.md"
 SECURITY = ROOT / "SECURITY.md"
+COLLABORATE = ROOT / "COLLABORATE.md"
 
 COURSES = (
     "CTIS151", "CTIS163", "CTIS164", "CTIS166", "CTIS255", "CTIS256",
@@ -57,7 +58,7 @@ class DocumentationTests(unittest.TestCase):
         cls.sources = json.loads(_text(ROOT / "docs" / "assets" / "sources.json"))["assets"]
 
     def test_required_documents_exist_and_readme_leads_with_outcome(self) -> None:
-        for path in (README, INSTALL, DISCLOSURE, NOTICE, LICENSE, CONTRIBUTING, SECURITY):
+        for path in (README, INSTALL, DISCLOSURE, NOTICE, LICENSE, CONTRIBUTING, SECURITY, COLLABORATE):
             self.assertTrue(path.is_file(), path.name)
         readme = _text(README)
         self.assertRegex(
@@ -241,7 +242,7 @@ class DocumentationTests(unittest.TestCase):
     def test_all_relative_links_resolve_and_official_links_are_well_formed(self) -> None:
         local_links: list[tuple[Path, str]] = []
         external_links: list[str] = []
-        for document in (README, INSTALL, DISCLOSURE, NOTICE, CONTRIBUTING, SECURITY):
+        for document in (README, INSTALL, DISCLOSURE, NOTICE, CONTRIBUTING, SECURITY, COLLABORATE):
             text = _text(document)
             targets = re.findall(r"\[[^\]]*\]\(([^)]+)\)", text)
             targets += re.findall(r'(?:href|src)="([^"]+)"', text)
@@ -264,7 +265,7 @@ class DocumentationTests(unittest.TestCase):
     def test_documents_avoid_hype_private_state_claims_local_paths_and_slop(self) -> None:
         corpus = "\n".join(
             _text(path)
-            for path in (README, INSTALL, DISCLOSURE, NOTICE, CONTRIBUTING, SECURITY)
+            for path in (README, INSTALL, DISCLOSURE, NOTICE, CONTRIBUTING, SECURITY, COLLABORATE)
         )
         banned_slop = (
             "delve", "foster", "leverage", "utilize", "facilitate", "empower",

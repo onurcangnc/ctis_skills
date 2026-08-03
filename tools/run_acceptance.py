@@ -29,7 +29,7 @@ MAX_MESSAGE_BYTES = 1024
 APPROVED_INPUT_COMMIT = "a197d6f8ec9f919a5b514283df70aa905927b67f"
 PUBLIC_ROOT_FILES = (
     ".gitattributes", ".gitignore", "README.md", "INSTALL.md", "DISCLOSURE.md", "NOTICE.md",
-    "LICENSE", "CONTRIBUTING.md", "SECURITY.md", "requirements-dev.txt", "plugin.json",
+    "LICENSE", "COLLABORATE.md", "CONTRIBUTING.md", "SECURITY.md", "requirements-dev.txt", "plugin.json",
 )
 PUBLIC_ROOT_DIRECTORIES = (
     ".claude-plugin", ".codex-plugin", "commands", "skills", "tools", "tests", "docs", "examples", "dist",
