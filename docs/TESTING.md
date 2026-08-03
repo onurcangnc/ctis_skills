@@ -20,9 +20,9 @@ The packages gate rebuilds all three artifacts in a temporary directory and requ
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 19 | `a847a96d8c0ad4cf30f17a83cdb872387748c99d5de8b8d776757486e421fb2d` |
-| `ctis-codex-plugin.zip` | 34 | `696effcefb42432658efbd114a17ac47923781bdff29c296919c317d96da86b6` |
-| `ctis-claude-plugin.zip` | 35 | `0364e47609d719603773d3a25528fd26b4bb2a1796b3a4d391a4dfe5f0d60d63` |
+| `ctis.skill` | 19 | `6efe4afed3b4ebf12c826ed84a910e21b4e224d46fbc185c0fc15e3ad09af4c0` |
+| `ctis-codex-plugin.zip` | 34 | `0e70a12d28cba3424eca5dfee171f90027613f48317f5270dfdbe1dc5076920b` |
+| `ctis-claude-plugin.zip` | 35 | `ad096dce314fdda6a7058a5abcb6f744bbb678c454161db872c857f726ac5997` |
 
 For narrower diagnosis, run:
 
@@ -37,13 +37,13 @@ The first command covers archive mutations, bounded validators, transactional re
 
 ## Verified release
 
-Version `1.1.0`, verified on 2026-08-04 at commit `2df9605` (`Stop requiring both client CLIs to be installed on every machine`).
+Version `1.2.0`, verified on 2026-08-04.
 
 - Full suite: 124 tests, 0 failures, 0 errors, 0 skips.
 - `python -B tools/run_acceptance.py`: `ACCEPTANCE_OK`, all five gates pass.
 - Examples: 23 PASS, 1 SKIP (`ctis256-php-syntax`, runtime unavailable: php), 0 FAIL on this Windows machine. The hosted run has PHP and reports 24 PASS, 0 SKIP, 0 FAIL.
 - GitHub Actions: the tracked-tree audit, the acceptance gates and the full suite pass on `ubuntu-latest`, and the run leaves the checkout unchanged.
 - Live slash-command smoke test: all 14 commands (`/ctis:151` … `/ctis:474`) invoked through real `claude -p "/ctis:<course> …"` calls against the installed skill; each loaded its module, produced the required shape, and closed with a `Verified` section. The check that carries the new framework clauses, `/ctis:474`, mapped the finding to `COBIT 2019 DSS05.04` and `ISO/IEC 27001 A.9.2.5`.
-- Both clients report `1.1.0` after an update, and the installed trees carry 14 commands, 14 course modules and the English-output rule in all of them.
+- Both clients report the current version after an update, and the installed trees carry 14 commands and 14 course modules.
 - The installed `route_ctis.py` is gone; each course is served by its own command contract, and the per-course `commands/*.md` files are what resolve `/ctis:<course>`.
 - Package hashes reproduced exactly from the tracked `dist/` (see table above).

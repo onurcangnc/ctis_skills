@@ -38,9 +38,9 @@ Last verified example run: `24 PASS / 0 SKIP / 0 FAIL` on a machine that has eve
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 19 | `a847a96d8c0ad4cf30f17a83cdb872387748c99d5de8b8d776757486e421fb2d` |
-| `ctis-codex-plugin.zip` | 34 | `696effcefb42432658efbd114a17ac47923781bdff29c296919c317d96da86b6` |
-| `ctis-claude-plugin.zip` | 35 | `0364e47609d719603773d3a25528fd26b4bb2a1796b3a4d391a4dfe5f0d60d63` |
+| `ctis.skill` | 19 | `6efe4afed3b4ebf12c826ed84a910e21b4e224d46fbc185c0fc15e3ad09af4c0` |
+| `ctis-codex-plugin.zip` | 34 | `0e70a12d28cba3424eca5dfee171f90027613f48317f5270dfdbe1dc5076920b` |
+| `ctis-claude-plugin.zip` | 35 | `ad096dce314fdda6a7058a5abcb6f744bbb678c454161db872c857f726ac5997` |
 
 ## 🎓 3. Course map
 
