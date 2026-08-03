@@ -34,7 +34,7 @@ Every course is a separate command. [skills/ctis/SKILL.md](skills/ctis/SKILL.md)
 - Claude: 18 semantic files; only `agents/openai.yaml` is dropped. [.claude-plugin/plugin.json](.claude-plugin/plugin.json), [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), and [plugin.json](plugin.json) define the client bindings.
 - Both clients use the same `ctis@ctis-skills` selector. Packages are generated deterministically from the same canonical source tree.
 
-Last verified example run: `23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`. A SKIP is not counted as a pass.
+Last verified example run: `24 PASS / 0 SKIP / 0 FAIL` on a machine that has every runtime, and `23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL` without PHP. A SKIP is not counted as a pass, so the suite reports the missing runtime by name instead of quietly passing.
 
 | Package | Members | SHA-256 |
 |---|---:|---|

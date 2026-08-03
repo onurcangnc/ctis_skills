@@ -141,8 +141,14 @@ class DocumentationTests(unittest.TestCase):
             self.assertIn(" ".join(record["verify"]), readme)
             self.assertIn(json.dumps(record["expected"], ensure_ascii=False), readme)
 
-        self.assertIn("23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL", readme)
-        self.assertNotIn("24 PASS", readme)
+        # Which of the two the reader gets depends on whether PHP is installed,
+        # and the acceptance gate asserts the line matching the run in front of
+        # it. Pinning one of them made the README true on a Windows laptop and
+        # false on a Linux runner, so both are stated and both totals must be
+        # the same nine-plus-fifteen suite.
+        self.assertIn("`24 PASS / 0 SKIP / 0 FAIL`", readme)
+        self.assertIn("`23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`", readme)
+        self.assertIn("A SKIP is not counted as a pass", readme)
 
     def test_release_summary_matches_current_packages_and_manifests(self) -> None:
         readme = _text(README)
