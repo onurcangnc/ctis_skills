@@ -12,6 +12,8 @@
 !/SECURITY.md
 !/requirements-dev.txt
 !/plugin.json
+!/.github/
+!/.github/**
 !/.claude-plugin/
 !/.claude-plugin/**
 !/.codex-plugin/

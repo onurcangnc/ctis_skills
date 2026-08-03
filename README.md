@@ -38,9 +38,9 @@ Last verified example run: `23 PASS / 1 SKIP (PHP runtime unavailable) / 0 FAIL`
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 19 | `2b037f249e446bfe457decfa4c14728e792f8d90330d7f8ceb5ce7bccc2ee266` |
-| `ctis-codex-plugin.zip` | 34 | `c99ad32ac9bf7cf4e5ab198eeb64d2b1b8b0205b341374cc12b05011b8159ef5` |
-| `ctis-claude-plugin.zip` | 35 | `1025baacc39fa4c6f20ebf49fb4acc8880cc98842a9da2dd91ab44a20708c96b` |
+| `ctis.skill` | 19 | `a847a96d8c0ad4cf30f17a83cdb872387748c99d5de8b8d776757486e421fb2d` |
+| `ctis-codex-plugin.zip` | 34 | `696effcefb42432658efbd114a17ac47923781bdff29c296919c317d96da86b6` |
+| `ctis-claude-plugin.zip` | 35 | `0364e47609d719603773d3a25528fd26b4bb2a1796b3a4d391a4dfe5f0d60d63` |
 
 ## 🎓 3. Course map
 
@@ -90,6 +90,8 @@ python -B tools/audit_public_tree.py --tracked
 ```
 
 The acceptance run ends with `ACCEPTANCE_OK` and covers five gates: source, behavior, packages, docs, and install. It rewrites nothing in the checkout it validates. The reproduction guide is in [docs/TESTING.md](docs/TESTING.md).
+
+The same three commands run on every push and pull request through [`.github/workflows/acceptance.yml`](.github/workflows/acceptance.yml), on a runner that also provides PHP and a JDK, so the hosted run covers examples a Windows laptop usually skips.
 
 ## ⚠️ Usage boundaries
 

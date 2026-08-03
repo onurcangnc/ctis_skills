@@ -50,7 +50,8 @@ A module is not a summary of lecture notes. It is a set of rules a model can exe
 3. **Write the module** in `skills/ctis/references/courses/ctis<code>.md`. Keep the six fixed sections that every module has: `Teaching posture`, `Scope`, `Rules with rewrites`, `Failure modes`, `Verification`, `Workflow`. Between `Scope` and `Rules with rewrites`, add the section that names the shape this course requires; the existing modules show the range, from `The four-step template` to `The audit chain`.
 4. **Write the command** in `commands/<code>.md`, following any existing command file.
 5. **Register it** in the command table in `skills/ctis/SKILL.md`.
-6. **Run the gates** before opening a pull request:
+6. **Raise the version** in `.claude-plugin/plugin.json`, and put the same number in `.codex-plugin/plugin.json`. Both clients skip an update when the version already installed matches the one offered, so a new module under an unchanged version never reaches anyone. `tests/test_release_version.py` fails the build if `skills/` or `commands/` changed and the number did not.
+7. **Run the gates** before opening a pull request:
 
 ```text
 python -B tools/run_acceptance.py
@@ -58,7 +59,7 @@ python -B -m unittest discover -s tests
 python -B tools/audit_public_tree.py --tracked
 ```
 
-The acceptance run must end with `ACCEPTANCE_OK`.
+The acceptance run must end with `ACCEPTANCE_OK`. The same three commands run on every pull request through [`.github/workflows/acceptance.yml`](.github/workflows/acceptance.yml), so a red check means one of them failed and the log names which.
 
 ## What does not go in
 

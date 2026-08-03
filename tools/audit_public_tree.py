@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 
 APPROVED_ROOTS = {
     ".claude-plugin",
+    ".github",
     "commands",
     ".codex-plugin",
     "docs",

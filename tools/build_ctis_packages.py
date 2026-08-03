@@ -9,6 +9,11 @@ import zipfile
 from pathlib import Path, PurePosixPath
 from typing import Callable
 
+try:  # imported as a package by the test suite
+    from tools.release_version import release_version
+except ModuleNotFoundError:  # run as a script, with tools/ on sys.path
+    from release_version import release_version
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "skills" / "ctis"
@@ -50,7 +55,7 @@ def commands_entries() -> dict[str, bytes]:
 
 PLUGIN_MANIFEST = {
     "name": "ctis-plugin",
-    "version": "1.0.0",
+    "version": release_version(),
     "description": "Anonymous course-specific CTIS reasoning, coding, review, and verification capabilities.",
     "author": {"name": "CTIS Capability Studio"},
     "skills": "./skills/",

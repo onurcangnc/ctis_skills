@@ -32,7 +32,7 @@ PUBLIC_ROOT_FILES = (
     "LICENSE", "COLLABORATE.md", "CONTRIBUTING.md", "SECURITY.md", "requirements-dev.txt", "plugin.json",
 )
 PUBLIC_ROOT_DIRECTORIES = (
-    ".claude-plugin", ".codex-plugin", "commands", "skills", "tools", "tests", "docs", "examples", "dist",
+    ".claude-plugin", ".codex-plugin", ".github", "commands", "skills", "tools", "tests", "docs", "examples", "dist",
 )
 _COURSES = {
     "ctis151", "ctis163", "ctis164", "ctis166", "ctis255", "ctis256",

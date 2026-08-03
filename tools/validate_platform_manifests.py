@@ -9,11 +9,16 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+try:  # imported as a package by the test suite
+    from tools.release_version import release_version
+except ModuleNotFoundError:  # run as a script, with tools/ on sys.path
+    from release_version import release_version
+
 
 REPOSITORY_URL = "https://github.com/onurcangnc/ctis_skills"
 PLUGIN_NAME = "ctis"
 MARKETPLACE_NAME = "ctis-skills"
-VERSION = "1.0.0"
+VERSION = release_version()
 PUBLISHER = "CTIS Skills Contributors"
 SEMVER_RE = re.compile(
     r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)"
