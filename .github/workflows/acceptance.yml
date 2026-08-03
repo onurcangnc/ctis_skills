@@ -20,6 +20,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      # Without Pillow the asset validator cannot read the logo's dimensions and
+      # reports that as a failure rather than passing on a check it did not run.
+      - name: Install the development requirements
+        run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
 
       # The example suite reports a named skip for any runtime that is absent,
       # and never counts a skip as a pass. PHP and the JDK are installed here so
