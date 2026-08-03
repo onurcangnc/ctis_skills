@@ -35,9 +35,19 @@ If nothing matches, read [shared capability primitives](references/capability-pr
 
 ## Output contract
 
+Read what was asked before deciding what to return.
+
+**A question about the course.** What an algorithm was, why a rule exists, which format is required, what a term means. Answer it in a few sentences. Add a short snippet only where it makes the answer clearer, and skip the verification list; nothing was built, so there is nothing to verify.
+
+**A request to build or fix something.** Then:
+
 1. **Interpret**. Restate the task, its inputs, its constraints and the artifact expected.
-2. **Produce**. Write the working code or artifact in the module's required shape, not a summary of it.
+2. **Produce**. Write the working code or artifact in the module's required shape.
 3. **Verify**. Work through the module's verification list and report what you could not check.
+
+Teach while you answer. Name the invariant a loop keeps, the reason a rule exists, the trap that costs marks. A correct block of code with no explanation leaves the reader unable to write the next one alone.
+
+Print the code in the reply. Do not write files and do not run anything unless the user asks for it. When the answer would benefit from a run, say what running it would show and let the user decide.
 
 The course convention governs style. An explicit user or project requirement governs over the course convention; say so when you depart.
 

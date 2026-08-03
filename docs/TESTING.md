@@ -20,9 +20,9 @@ The packages gate rebuilds all three artifacts in a temporary directory and requ
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 18 | `0095b85bad0adbd0d8eb4b9ec69f6a47af5f2f0fd7b83182ce3238b122f529cb` |
-| `ctis-codex-plugin.zip` | 32 | `37bcda71a7f9ceabd8c7fc824ddf05973ee7ff7c009cc0c80f52913c955f4959` |
-| `ctis-claude-plugin.zip` | 33 | `e7e8e82d86492d19255814d10fcb63f66df19e89344f56b2d3ef93371784c7f0` |
+| `ctis.skill` | 18 | `9a8c02c5ccfd5def247ad0669a429d4152ea7ee2046b68c8698978a8454428dd` |
+| `ctis-codex-plugin.zip` | 32 | `8386a69eb2f152e29ff11308887a7efd5e830d5698343f7364fed2fa891c399a` |
+| `ctis-claude-plugin.zip` | 33 | `c1e36f7cc20c215a2ef68839d8f5dca004f0b0f62e78c99298e36e7194f16116` |
 
 For narrower diagnosis, run:
 
