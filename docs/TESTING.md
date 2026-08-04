@@ -21,8 +21,8 @@ The packages gate rebuilds all three artifacts in a temporary directory and requ
 | Package | Members | SHA-256 |
 |---|---:|---|
 | `ctis.skill` | 19 | `2854f8d15631b6dc56103fc0eaeef35a01999d9e737a7cde0daa72390edab3d4` |
-| `ctis-codex-plugin.zip` | 34 | `a9935b3017bb080faf800e4571cae6751537ceeaf0cc5075e618b12c215125bd` |
-| `ctis-claude-plugin.zip` | 35 | `1604aeed4ea5df612d58a1375102a920c94447c52cabb8570e08493248a8310b` |
+| `ctis-codex-plugin.zip` | 34 | `594973c6dbb3dc5c6447fe652e19bbc9b48fb17ee7a7899aaf322f84fedf6f74` |
+| `ctis-claude-plugin.zip` | 35 | `a1968df1ed8e7c0411bdaa31339c4d3d687a074336b5a9ebf30b40c6ff19bda7` |
 
 For narrower diagnosis, run:
 
@@ -37,7 +37,7 @@ The first command covers archive mutations, bounded validators, transactional re
 
 ## Verified release
 
-Version `1.2.3`, verified on 2026-08-04.
+Version `1.2.4`, verified on 2026-08-04.
 
 - Full suite: 124 tests, 0 failures, 0 errors, 0 skips.
 - `python -B tools/run_acceptance.py`: `ACCEPTANCE_OK`, all five gates pass.
@@ -51,6 +51,10 @@ Version `1.2.3`, verified on 2026-08-04.
 - Sweep on 1.2.2, 20 runs on one model with `/ctis:264`, `/ctis:166` and `/ctis:259` repeated three times each: 99 of 100 passed. `/ctis:166` went from none to three of three and `/ctis:259` wrote an English schema on all three, so both fixes held. `/ctis:264` stayed at two of three, unchanged by the fix that repaired the other two.
 - That difference is in the prompts, not the courses. `/ctis:264` was the only request in the sweep phrased as build **and** explain, and all three of its failing replies ended on the explanation. A mixed request matched both branches of the command contract, and the branch that reached the end won. 1.2.3 states that a request to build and explain is a build request, and that the explanation precedes the closing section rather than replacing it.
 - A sweep that varies one command's phrasing and no other's cannot separate a course problem from a prompt problem. A later sweep should phrase several courses as build-and-explain.
+- Sweep on 1.2.3, 22 runs on one model, four courses phrased as build-and-explain three times each against ten phrased plainly: 109 of 110 passed. The closing section held on all twenty runs that produced an artifact, in both groups.
+- That result does not settle what caused the earlier failures. It ran against the version that had already patched the mixed-request case, so it measures the patched behavior, not the phrasing. Deciding between the patch working and the earlier failures being variance would need the same mixed prompts run against 1.2.2, and that question is not worth another sweep.
+- The one failure was `/ctis:262` answering in English. Its reply opens by reporting that the course file was permission-blocked. `/ctis:163` failed the same criterion in the 1.2.1 sweep and opened by reporting the module file was outside the allowed directories. Both language failures observed across four sweeps arrived with a module read failure, and the reply that explains a read failure explains it in English, which then sets the language for everything after it.
+- 1.2.4 states what to do when the module cannot be read: report it in one line in the language of the request, and continue on the command file's own rules, which do not depend on the module. Two co-occurrences are a thin basis for a fix; this one is cheap and cannot regress a run where the module loads.
 - Both clients report the current version after an update, and the installed trees carry 14 commands and 14 course modules.
 - The installed `route_ctis.py` is gone; each course is served by its own command contract, and the per-course `commands/*.md` files are what resolve `/ctis:<course>`.
 - Package hashes reproduced exactly from the tracked `dist/` (see table above).
