@@ -4,6 +4,8 @@ Fourteen courses have a module. The CTIS curriculum has more, and several of the
 
 ## What is covered
 
+The command column is how Claude Code reaches each course. Codex loads the skill rather than the commands, so there you write `$ctis:259` and the skill picks the module from what you wrote.
+
 | Command | Course | Year |
 |---|---|---|
 | `/ctis:151` | Introduction to Programming | 1 |

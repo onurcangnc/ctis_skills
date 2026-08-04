@@ -24,7 +24,12 @@ codex plugin marketplace add onurcangnc/ctis_skills --ref main
 codex plugin add ctis@ctis-skills
 ```
 
-In a new session, call the course you need: `/ctis:264` for Python algorithms, `/ctis:474` for an audit finding, and so on. The skill itself answers to `/ctis` in Claude Code and `$ctis` in Codex when you want it to pick the module for you. Update, uninstall, and local-package steps live in [INSTALL.md](INSTALL.md).
+The two clients are reached differently, because Codex loads skills and does not register a plugin's commands as slash commands.
+
+- **Claude Code**: call the course directly, `/ctis:264` for Python algorithms or `/ctis:474` for an audit finding. The client resolves the name to `commands/264.md`, so nothing is matched or guessed. `/ctis` on its own lets the skill choose the module.
+- **Codex**: start with `$ctis` and name the course in the request, `$ctis:259` or `$ctis CTIS259 ...`. The skill reads the course code from what you wrote, says which module it chose, and loads it.
+
+Update, uninstall, and local-package steps live in [INSTALL.md](INSTALL.md).
 
 ## ⚙️ 2. What the skill does
 
