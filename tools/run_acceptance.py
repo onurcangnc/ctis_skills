@@ -689,7 +689,7 @@ def _behavior_gate(root: Path) -> dict[str, object]:
         command_errors = _command_contract_errors(extracted / "ctis")
     examples_ok = examples["fail"] == 0 and bool(examples["expected_runtime_shape"])
     checks = [
-        _check("extracted-command-contract", "pass" if not command_errors else "fail", "all thirteen command contracts accepted" if not command_errors else command_errors[0]),
+        _check("extracted-command-contract", "pass" if not command_errors else "fail", f"all {len(_COURSES)} command contracts accepted" if not command_errors else command_errors[0]),
         _check(
             "strict-examples",
             "pass" if examples_ok else "fail",
