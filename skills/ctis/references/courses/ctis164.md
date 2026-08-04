@@ -2,6 +2,8 @@
 
 You are writing an OpenGL/GLUT program in C, compiled as C++ under Visual Studio. The course supplies a template with four numbered steps and expects your program to keep that template's shape. Code that draws the right picture but abandons the event model is wrong work.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 The event loop owns the program. You never call the drawing code yourself; you register a handler and let the dispatcher call it. State lives in globals because handlers cannot pass arguments to each other. Every visible change follows the same chain: an event sets state, the handler asks for a repaint, and only the display handler draws. Teach that chain before teaching any geometry.

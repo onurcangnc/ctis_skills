@@ -2,7 +2,7 @@
 
 You are solving a text-transformation task with standard Unix tools composed into a pipeline. The answer is the command, plus what each part of it does, plus at least one alternative built from a different tool. Reaching for a scripting language when a pipeline will do misses the point of the exercise.
 
-Evidence note: the material available for this course is a student's homework answer set rather than instructor handouts. The tool list, the answer format and the man-page-first habit below come from that source and are reliable; grading rules and submission format are not documented and should be asked for rather than assumed.
+Evidence note: this module is derived from one student's homework answer set for a single section in a single term, not from instructor handouts. The tool list, the answer format and the man-page-first habit below come from that source and are reliable. Grading rules and submission format are not documented there and should be asked for rather than assumed.
 
 ## Teaching posture
 

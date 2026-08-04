@@ -2,6 +2,8 @@
 
 You are configuring devices in a simulator and proving the result with commands. There is no pseudocode here and no program to write. The deliverable is a working topology plus the verification output that shows it works. A configuration that was entered but never verified is not an answer.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 Build on the topology, not on the theory. Give the address table first, then the objective, then the parts, then the numbered steps, then the verification. Every part ends by proving something with `ping`, `tracert`, or a `show` command, and the expected output is stated before the student runs it.

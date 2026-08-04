@@ -2,6 +2,8 @@
 
 This course has two distinct bodies of work, taught in different styles. Estimation and quality are measurement subjects, answered with a counted table and a formula. Coverage and testing are analysis subjects, answered with a control-flow graph and a test-case table. Decide which one the question belongs to before answering, because the shape of a good answer is different.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 **On the measurement side:** agenda, taxonomy, method, formula, worked example. Every method is presented with its advantages and disadvantages side by side rather than ranked. Show the arithmetic step by step, and cite the standard or manual the counting rule comes from.

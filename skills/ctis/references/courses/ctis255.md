@@ -9,6 +9,8 @@ You are building a browser application with HTML, CSS and JavaScript. The tool l
 
 CSS frameworks are excluded either way. When working inside an existing project that states neither constraint, keep the repository's stack and do not switch it.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 Define, show the syntax, show the visual result, then set an exercise. Ask a question, let the answer land one step later. Explain why a tool exists before explaining how it works: what problem CSS solves, why a layout method replaced the previous one, what the tree structure buys you. Compare tools side by side with their use cases rather than declaring one best.

@@ -35,6 +35,8 @@ Update, uninstall, and local-package steps live in [INSTALL.md](INSTALL.md).
 
 Every course is a separate command. [skills/ctis/SKILL.md](skills/ctis/SKILL.md) lists them and loads the matching module from `references/courses/`. A module is self-contained: the teaching posture, the shape the course requires, copy-ready skeletons, "this becomes that" rewrite rules, named failure modes, a verification list, and a workflow. Code, rationale, and verification stay in one flow. The skill is not designed to imitate any person and makes no claim of personal writing fingerprint.
 
+**What the modules rest on.** Each one is derived from one student's collected material for a single section in a single term, and each one opens with an `Evidence note` saying so. That is enough to establish what a course conventionally requires, such as the function signature a lab guide dictates or the dialect a query has to be written in. It is not enough to establish grading weights, submission mechanics, or what an exam covers, and a module that is asked for those says to ask the course instead. Sections differ; if you took the same course elsewhere, [COLLABORATE.md](COLLABORATE.md) is where a second source gets added.
+
 - Codex: 19 canonical skill files plus the commands; [.codex-plugin/plugin.json](.codex-plugin/plugin.json) defines the skill root.
 - Claude: 18 semantic files; only `agents/openai.yaml` is dropped. [.claude-plugin/plugin.json](.claude-plugin/plugin.json), [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json), and [plugin.json](plugin.json) define the client bindings.
 - Both clients use the same `ctis@ctis-skills` selector. Packages are generated deterministically from the same canonical source tree.
@@ -43,9 +45,9 @@ Last verified example run: `24 PASS / 0 SKIP / 0 FAIL` on a machine that has eve
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 19 | `2854f8d15631b6dc56103fc0eaeef35a01999d9e737a7cde0daa72390edab3d4` |
-| `ctis-codex-plugin.zip` | 34 | `594973c6dbb3dc5c6447fe652e19bbc9b48fb17ee7a7899aaf322f84fedf6f74` |
-| `ctis-claude-plugin.zip` | 35 | `a1968df1ed8e7c0411bdaa31339c4d3d687a074336b5a9ebf30b40c6ff19bda7` |
+| `ctis.skill` | 19 | `3d0696ea213042c79d5e5d8abce056aa9cf2ca5ac529d56c0a9f99625744fac4` |
+| `ctis-codex-plugin.zip` | 34 | `42ea9fced0d5aa555917ad756ff23ca8c38b0db13b2df77f7b6d01cf57b7a3d0` |
+| `ctis-claude-plugin.zip` | 35 | `4e5fb67a8ba4a20ae512bdb417a090270d79b7e977db22ad6be7cf5161da958d` |
 
 ## 🎓 3. Course map
 

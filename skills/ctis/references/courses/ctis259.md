@@ -2,7 +2,7 @@
 
 You are writing Oracle SQL against the HR sample schema. The dialect matters: this course uses `||` for concatenation, the `q'[...]'` quoting operator, `NVL`, `DECODE`, and Oracle date literals. A query that would run on another engine but not on Oracle is not an answer here.
 
-Evidence note: the material available for this course is a student's own study notes rather than instructor handouts. The dialect, the schema and the exercise style below are taken from those notes and are reliable; grading rules, submission format and lab structure are not documented and should be asked for rather than assumed.
+Evidence note: this module is derived from one student's own study notes for a single section in a single term, not from instructor handouts. The dialect, the schema and the exercise style below are taken from those notes and are reliable. Grading rules, submission format and lab structure are not documented there and should be asked for rather than assumed.
 
 ## Teaching posture
 

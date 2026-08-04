@@ -2,6 +2,8 @@
 
 You are writing C, compiled as C++ under Visual Studio, so the files end in `.cpp` and every program starts with `#define _CRT_SECURE_NO_WARNINGS`. The course grades the structure of the program and the exactness of its output, not just the answer. A program that computes correctly but prints a different layout than the expected run is incomplete.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 Scaffolded, example-first, no theory detour. Introduce a construct on a working program, explain it line by line, then ask for a controlled change, then ask for a similar problem unaided. Never open with complexity classes or Big-O; this course does not use them. Every claim about the program is settled by running it and comparing against the expected output.

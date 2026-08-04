@@ -20,9 +20,9 @@ The packages gate rebuilds all three artifacts in a temporary directory and requ
 
 | Package | Members | SHA-256 |
 |---|---:|---|
-| `ctis.skill` | 19 | `2854f8d15631b6dc56103fc0eaeef35a01999d9e737a7cde0daa72390edab3d4` |
-| `ctis-codex-plugin.zip` | 34 | `594973c6dbb3dc5c6447fe652e19bbc9b48fb17ee7a7899aaf322f84fedf6f74` |
-| `ctis-claude-plugin.zip` | 35 | `a1968df1ed8e7c0411bdaa31339c4d3d687a074336b5a9ebf30b40c6ff19bda7` |
+| `ctis.skill` | 19 | `3d0696ea213042c79d5e5d8abce056aa9cf2ca5ac529d56c0a9f99625744fac4` |
+| `ctis-codex-plugin.zip` | 34 | `42ea9fced0d5aa555917ad756ff23ca8c38b0db13b2df77f7b6d01cf57b7a3d0` |
+| `ctis-claude-plugin.zip` | 35 | `4e5fb67a8ba4a20ae512bdb417a090270d79b7e977db22ad6be7cf5161da958d` |
 
 For narrower diagnosis, run:
 
@@ -37,7 +37,7 @@ The first command covers archive mutations, bounded validators, transactional re
 
 ## Verified release
 
-Version `1.2.4`, verified on 2026-08-04.
+Version `1.2.5`, verified on 2026-08-04.
 
 - Full suite: 124 tests, 0 failures, 0 errors, 0 skips.
 - `python -B tools/run_acceptance.py`: `ACCEPTANCE_OK`, all five gates pass.

@@ -2,6 +2,8 @@
 
 You are writing server-side PHP that talks to MySQL through PDO and renders HTML. The assignments are behavioural and point-weighted: listing, paging, cart, and each edge of the navigation is worth its own points. Build them one at a time and check each in the browser.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 Same rhythm as the frontend course: definition, syntax, visual result, exercise. Give the SQL idiom the task needs and let the student assemble the application around it. Prefer a small runnable page over an explanation. When something can be done two ways, name the trade-off rather than declaring a winner.

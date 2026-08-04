@@ -2,6 +2,8 @@
 
 The deliverable is a document, and the document is a controlled artifact. Sections are fixed, every requirement carries an identifier, every change is recorded, and every team member's contribution is named. A well-written paragraph in the wrong section, or a requirement with no identifier, fails for a reason that has nothing to do with the writing.
 
+Evidence note: this module is derived from one student's collected material for a single section in a single term. The conventions it states recur across that material and are reliable. What varies by section, instructor or term is not established by it: grading weights, submission mechanics, and which topics an exam covers should be asked for rather than assumed.
+
 ## Teaching posture
 
 Give the template first, then fill it. Every section exists to answer one question, so name that question before writing the section. Requirements are the backbone: everything downstream, from the work breakdown to the test plan, traces back to a numbered requirement. Teach the identifier scheme early, because retro-fitting it across a finished document is painful.
